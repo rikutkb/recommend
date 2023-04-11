@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  json-server:
+   build: ./json-server
+   container_name: test-json-server
+   ports: 
+    - '8080:8080'
+   volumes:
+    - ./json-server/spotify-network.json:/data/spotify-network.json
+   command: json-server --p 8080 --watch spotify-network.json --host 0.0.0.0
   node:
     build: .
     volumes:
