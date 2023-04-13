@@ -29,9 +29,11 @@ const PlaylistView: React.FC<Props> = ({ }) => {
             <ul>
                 {
                     playlist && playlist.tracks.items.map((track) =>(
+                        <li>
                         <PlaylistItem key={track.track.id}
                         track= {track.track}
                         handleClick={handleClick}></PlaylistItem>
+                        </li>
                     ))
                 }
             </ul>
