@@ -12,9 +12,8 @@ localhost:3000にて画面が描画
 reactによるフロント画面
 ## 8080ポート
 jsonサーバ
-jsonサーバの反映を動的に行いたい場合は
 
-$ docker exec -it test-json-server /bin/sh
+/api以下にjsonを配置するとmerge.jsonとなって自動に出力されます。
 
 コンテナ内で以下のコマンドを実行
 
