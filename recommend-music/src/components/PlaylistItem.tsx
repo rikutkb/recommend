@@ -16,9 +16,7 @@ const PlaylistItem: React.FC<Props> = ({ track, handleClick }) => {
     return (
         <ListItem>
             <ListItemAvatar>
-                <Avatar>
-                    <ImageIcon />
-                </Avatar>
+                <Avatar src={track.album.images[0].url} />
             </ListItemAvatar>
             <ListItemText primary={track.name} secondary={track.artists[0].name} />
         </ListItem>
