@@ -13,6 +13,10 @@ services:
     build: ./recommend-music
     volumes:
       - ./recommend-music:/usr/src/app
+      - react-node-modules:/usr/src/app/node_modules
     command: sh -c 'npm run start'
     ports:
       - '3000:3000'
+
+volumes:
+  react-node-modules:
