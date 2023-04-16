@@ -7,8 +7,9 @@ services:
    ports: 
     - '8080:8080'
    volumes:
-    - ./json-server/spotify-network.json:/data/spotify-network.json
-   command: json-server --p 8080 --watch spotify-network.json --host 0.0.0.0
+    - ./json-server:/data
+    - json-node-modules:/data/node_modules
+   command: json-server --p 8080 --watch merge.json --host 0.0.0.0
   node:
     build: ./recommend-music
     volumes:
@@ -20,3 +21,4 @@ services:
 
 volumes:
   react-node-modules:
+  json-node-modules:

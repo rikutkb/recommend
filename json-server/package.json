@@ -1,0 +1,24 @@
+{
+
+    "watch": {
+
+        "start": "/data/api/*.json"
+
+    },
+
+    "scripts": {
+
+        "start": "node merge-json.js",
+
+        "watch": "npm-watch"
+
+    },
+
+    "devDependencies": {
+
+        "npm-watch": "^0.11.0"
+
+    }
+
+}
+
