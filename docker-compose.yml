@@ -10,9 +10,9 @@ services:
     - ./json-server/spotify-network.json:/data/spotify-network.json
    command: json-server --p 8080 --watch spotify-network.json --host 0.0.0.0
   node:
-    build: .
+    build: ./recommend-music
     volumes:
-      - ./:/usr/src/app
-    command: sh -c 'cd recommend-music && npm run start'
+      - ./recommend-music:/usr/src/app
+    command: sh -c 'npm run start'
     ports:
       - '3000:3000'
