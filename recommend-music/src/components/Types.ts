@@ -79,3 +79,15 @@ export interface Playlist {
     tracks: Tracks;
     type: string;
 }
+
+
+export interface MusicPlot{
+    x: number;
+    y: number;
+    label: {
+        track:{
+            id: string;
+            name: string;
+        }
+    }
+  };
