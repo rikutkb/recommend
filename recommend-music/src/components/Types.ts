@@ -81,13 +81,17 @@ export interface Playlist {
 }
 
 
-export interface MusicPlot{
+export interface MusicPlot {
     x: number;
     y: number;
     label: {
-        track:{
+        track: {
             id: string;
             name: string;
         }
     }
-  };
+};
+
+export interface MusicPlots {
+    plots: MusicPlot[];
+}

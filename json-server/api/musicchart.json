@@ -1,0 +1,65 @@
+{
+    "plots": [
+        {
+            "x": 2,
+            "y": 41,
+            "label": {
+                "track": {
+                    "id": "b0141ab2-3e21-5daf-8d9c-bb766b51059d",
+                    "name": "test-1"
+                }
+            }
+        },
+        {
+            "x": 12,
+            "y": 67,
+            "label": {
+                "track": {
+                    "id": "dec3740e-fc56-5c8f-9b2e-83c468d40c76",
+                    "name": "test-2"
+                }
+            }
+        },
+        {
+            "x": 2,
+            "y": 41,
+            "label": {
+                "track": {
+                    "id": "541c8862-2e45-5add-b986-bd813d9923ca",
+                    "name": "test-3"
+                }
+            }
+        },
+        {
+            "x": 34,
+            "y": 68,
+            "label": {
+                "track": {
+                    "id": "a50a68e0-9454-5ec6-8448-f200be7eceb1",
+                    "name": "test-4"
+                }
+            }
+        },
+        {
+            "x": 77,
+            "y": 55,
+            "label": {
+                "track": {
+                    "id": "67389cfb-5496-506f-9d47-61316a094530",
+                    "name": "test-5"
+                }
+            }
+        },
+        {
+            "x": 72,
+            "y": 71,
+            "label": {
+                "track": {
+                    "id": "0f6f1d83-1d21-5fa0-ba6c-d6a0a3f55289",
+                    "name": "test-6"
+                }
+            }
+        }
+
+    ]
+}
