@@ -22,7 +22,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
     }
     useEffect(() => {
         const fetchPlaylist = async () => {
-            const response = await fetch("http://localhost:8080/playlist");
+            const response = await fetch("http://localhost:8080/suggestPlaylist");
             const data: Playlist = await response.json();
             setPlaylist(data)
         }
@@ -43,12 +43,12 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                 }}
                 id="controllable-states-demo"
                 options={options}
-                sx={{ width: 200 }}
+                sx={{ width: 300 }}
                 renderInput={(params) => <TextField {...params} label="Controllable" />}
             />
             <List sx={{
                 width: '100%',
-                maxWidth: 200,
+                maxWidth: 360,
                 bgcolor: 'background.paper',
                 position: 'relative',
                 overflow: 'auto',

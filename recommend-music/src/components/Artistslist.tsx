@@ -2,31 +2,36 @@ import React, { useEffect, useState } from "react";
 import PlaylistItem from "./PlaylistItem";
 import List from '@mui/material/List';
 
-import { Playlist, Track } from "./Types";
+import { Artist, Artists } from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemText from '@mui/material/ListItemText';
+import ListItem from '@mui/material/ListItem';
+import Avatar from '@mui/material/Avatar';
 
-const options = ['あいみょん', 'test-2'];
+const options = ['あいみょん', 'artists'];
 type Props = {
     //playlist: Playlist
     //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
 }
 
-const PlaylistView: React.FC<Props> = ({ }) => {
-    const [playlist, setPlaylist] = useState<Playlist>();
+const ArtistsListView: React.FC<Props> = ({ }) => {
+    const [artistsList, setArtists] = useState<Artists>();
     const [value, setValue] = React.useState<string | null>(options[0]);
     const [inputValue, setInputValue] = React.useState('');
-    const handleClick = (track: Track) => {
+    const handleClick = (track: Artist) => {
         console.log("----");
     }
     useEffect(() => {
-        const fetchPlaylist = async () => {
-            const response = await fetch("http://localhost:8080/playlist");
-            const data: Playlist = await response.json();
-            setPlaylist(data)
+        const fetchArtists = async () => {
+            const response = await fetch("http://localhost:8080/artists");
+            console.log(response)
+            const data: Artists = await response.json();
+            setArtists(data)
         }
-        fetchPlaylist();
+        fetchArtists();
 
     }, [])
     return (
@@ -56,10 +61,15 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                 '& ul': { padding: 0 }
             }}>
                 {
-                    playlist && playlist.tracks.items.map((track) => (
-                        <PlaylistItem key={track.track.id}
-                            track={track.track}
-                            handleClick={handleClick}></PlaylistItem>
+                    artistsList && artistsList.artists.items.map((artist) => (
+
+                        <ListItem>
+                            <ListItemAvatar>
+                                <Avatar src={artist.images[0]?.url} />
+
+                            </ListItemAvatar>
+                            <ListItemText primary={artist.name} secondary={artist.genres} />
+                        </ListItem>
                     ))
                 }
             </List>
@@ -71,4 +81,4 @@ const PlaylistView: React.FC<Props> = ({ }) => {
 }
 
 
-export default PlaylistView
+export default ArtistsListView

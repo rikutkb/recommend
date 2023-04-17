@@ -53,6 +53,18 @@ export interface Artist {
     type: string;
     uri: string;
 }
+export interface Artists{
+    artists:{
+        items: Artist[]
+        href: string;
+        limit: number;
+        offset: number;
+        next: string;
+        previous: string;
+        total: number;
+    }
+
+}
 export interface Tracks {
     href: string;
     limit: number;
@@ -95,3 +107,4 @@ export interface MusicPlot {
 export interface MusicPlots {
     plots: MusicPlot[];
 }
+

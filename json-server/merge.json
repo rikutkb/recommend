@@ -1,4 +1,709 @@
 {
+  "artists": {
+    "artists": {
+      "href": "https://api.spotify.com/v1/search?query=remaster%2520track%3ADoxy%2520artist%3AMiles%2520Davis&type=artist&locale=ja%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=0&limit=20",
+      "items": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0vx9kK94J20w8DGCuedgMj"
+          },
+          "followers": {
+            "href": null,
+            "total": 6122
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/0vx9kK94J20w8DGCuedgMj",
+          "id": "0vx9kK94J20w8DGCuedgMj",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5ebee05d4d373bcdcf5cfd60279",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174ee05d4d373bcdcf5cfd60279",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178ee05d4d373bcdcf5cfd60279",
+              "width": 160
+            }
+          ],
+          "name": "TheLegendBDavis",
+          "popularity": 25,
+          "type": "artist",
+          "uri": "spotify:artist:0vx9kK94J20w8DGCuedgMj"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1UMFvfUUhddeehpyd7D8dw"
+          },
+          "followers": {
+            "href": null,
+            "total": 540
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/1UMFvfUUhddeehpyd7D8dw",
+          "id": "1UMFvfUUhddeehpyd7D8dw",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5ebae883aeb4af654a83f907116",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174ae883aeb4af654a83f907116",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178ae883aeb4af654a83f907116",
+              "width": 160
+            }
+          ],
+          "name": "Davis",
+          "popularity": 32,
+          "type": "artist",
+          "uri": "spotify:artist:1UMFvfUUhddeehpyd7D8dw"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1MhOWZjhyodoOnCG4Z2xAr"
+          },
+          "followers": {
+            "href": null,
+            "total": 59669
+          },
+          "genres": [
+            "mongolian hip hop"
+          ],
+          "href": "https://api.spotify.com/v1/artists/1MhOWZjhyodoOnCG4Z2xAr",
+          "id": "1MhOWZjhyodoOnCG4Z2xAr",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb0975fb7c181540fc41349f3d",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab676161000051740975fb7c181540fc41349f3d",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f1780975fb7c181540fc41349f3d",
+              "width": 160
+            }
+          ],
+          "name": "Davaidasha",
+          "popularity": 36,
+          "type": "artist",
+          "uri": "spotify:artist:1MhOWZjhyodoOnCG4Z2xAr"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0Y3agQaa6g2r0YmHPOO9rh"
+          },
+          "followers": {
+            "href": null,
+            "total": 2625020
+          },
+          "genres": [
+            "afro dancehall",
+            "afropop",
+            "azontobeats",
+            "ghanaian hip hop",
+            "nigerian pop"
+          ],
+          "href": "https://api.spotify.com/v1/artists/0Y3agQaa6g2r0YmHPOO9rh",
+          "id": "0Y3agQaa6g2r0YmHPOO9rh",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb1ae40d4e47750c0ac367f993",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab676161000051741ae40d4e47750c0ac367f993",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f1781ae40d4e47750c0ac367f993",
+              "width": 160
+            }
+          ],
+          "name": "Davido",
+          "popularity": 75,
+          "type": "artist",
+          "uri": "spotify:artist:0Y3agQaa6g2r0YmHPOO9rh"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3ESG6pj6a0LvUKklENalT6"
+          },
+          "followers": {
+            "href": null,
+            "total": 407773
+          },
+          "genres": [
+            "adult standards",
+            "easy listening",
+            "lounge",
+            "vocal jazz"
+          ],
+          "href": "https://api.spotify.com/v1/artists/3ESG6pj6a0LvUKklENalT6",
+          "id": "3ESG6pj6a0LvUKklENalT6",
+          "images": [
+            {
+              "height": 1000,
+              "url": "https://i.scdn.co/image/177e8ea19a5da187ddc33cc76d6d65b764fdf277",
+              "width": 1000
+            },
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/c11bb32e6a96a88cffce8f459ca93ef0bbc12ec6",
+              "width": 640
+            },
+            {
+              "height": 200,
+              "url": "https://i.scdn.co/image/aa43bb8c8e2f7a59a1240cbf0a76680b337af01c",
+              "width": 200
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/1027953d24f01af46ac4aecca962dfa02e52330d",
+              "width": 64
+            }
+          ],
+          "name": "ドリス・デイ",
+          "popularity": 57,
+          "type": "artist",
+          "uri": "spotify:artist:3ESG6pj6a0LvUKklENalT6"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4kzKZExmgB0xijgF6blONc"
+          },
+          "followers": {
+            "href": null,
+            "total": 2223
+          },
+          "genres": [
+            "piano cover"
+          ],
+          "href": "https://api.spotify.com/v1/artists/4kzKZExmgB0xijgF6blONc",
+          "id": "4kzKZExmgB0xijgF6blONc",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f62cd1655516228ae3667865",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f62cd1655516228ae3667865",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f62cd1655516228ae3667865",
+              "width": 64
+            }
+          ],
+          "name": "David Huntsinger",
+          "popularity": 39,
+          "type": "artist",
+          "uri": "spotify:artist:4kzKZExmgB0xijgF6blONc"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6opjDqwktGxPYPdOAs6T83"
+          },
+          "followers": {
+            "href": null,
+            "total": 1867
+          },
+          "genres": [
+            "deep soft rock",
+            "yacht rock"
+          ],
+          "href": "https://api.spotify.com/v1/artists/6opjDqwktGxPYPdOAs6T83",
+          "id": "6opjDqwktGxPYPdOAs6T83",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273404a0d177bbfcd1c8b14e2a4",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02404a0d177bbfcd1c8b14e2a4",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851404a0d177bbfcd1c8b14e2a4",
+              "width": 64
+            }
+          ],
+          "name": "David Roberts",
+          "popularity": 32,
+          "type": "artist",
+          "uri": "spotify:artist:6opjDqwktGxPYPdOAs6T83"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4sQVPSDmfqIxG9W8o2EROX"
+          },
+          "followers": {
+            "href": null,
+            "total": 87937
+          },
+          "genres": [
+            "bebop",
+            "jazz",
+            "jazz quartet"
+          ],
+          "href": "https://api.spotify.com/v1/artists/4sQVPSDmfqIxG9W8o2EROX",
+          "id": "4sQVPSDmfqIxG9W8o2EROX",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27364351626df25d938db9b9f2f",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0264351626df25d938db9b9f2f",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485164351626df25d938db9b9f2f",
+              "width": 64
+            }
+          ],
+          "name": "マイルス・デイヴィス・カルテット",
+          "popularity": 39,
+          "type": "artist",
+          "uri": "spotify:artist:4sQVPSDmfqIxG9W8o2EROX"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5gOJTI4TusSENizxhcG7jB"
+          },
+          "followers": {
+            "href": null,
+            "total": 4353757
+          },
+          "genres": [
+            "latin arena pop",
+            "latin pop",
+            "spanish pop",
+            "spanish pop rock"
+          ],
+          "href": "https://api.spotify.com/v1/artists/5gOJTI4TusSENizxhcG7jB",
+          "id": "5gOJTI4TusSENizxhcG7jB",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb0a0753868eeee7e7d092070c",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab676161000051740a0753868eeee7e7d092070c",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f1780a0753868eeee7e7d092070c",
+              "width": 160
+            }
+          ],
+          "name": "David Bisbal",
+          "popularity": 71,
+          "type": "artist",
+          "uri": "spotify:artist:5gOJTI4TusSENizxhcG7jB"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5p2HHGakKOJCICf9fnfnQ9"
+          },
+          "followers": {
+            "href": null,
+            "total": 1408
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/5p2HHGakKOJCICf9fnfnQ9",
+          "id": "5p2HHGakKOJCICf9fnfnQ9",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb69aa9bc7a5707f2f3e55e69f",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab6761610000517469aa9bc7a5707f2f3e55e69f",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f17869aa9bc7a5707f2f3e55e69f",
+              "width": 160
+            }
+          ],
+          "name": "Dosi",
+          "popularity": 56,
+          "type": "artist",
+          "uri": "spotify:artist:5p2HHGakKOJCICf9fnfnQ9"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6E94QKXZv8BbO6QQJxcxLI"
+          },
+          "followers": {
+            "href": null,
+            "total": 213588
+          },
+          "genres": [
+            "flamenco urbano",
+            "pop flamenco"
+          ],
+          "href": "https://api.spotify.com/v1/artists/6E94QKXZv8BbO6QQJxcxLI",
+          "id": "6E94QKXZv8BbO6QQJxcxLI",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5ebc6eb791e7b3b5af46114cfd4",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174c6eb791e7b3b5af46114cfd4",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178c6eb791e7b3b5af46114cfd4",
+              "width": 160
+            }
+          ],
+          "name": "Daviles de Novelda",
+          "popularity": 66,
+          "type": "artist",
+          "uri": "spotify:artist:6E94QKXZv8BbO6QQJxcxLI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3M5TXkT9LxgZPcLSKBr4Pf"
+          },
+          "followers": {
+            "href": null,
+            "total": 3419
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/3M5TXkT9LxgZPcLSKBr4Pf",
+          "id": "3M5TXkT9LxgZPcLSKBr4Pf",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eba67fab0cbf3c0c9edc6e0897",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174a67fab0cbf3c0c9edc6e0897",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178a67fab0cbf3c0c9edc6e0897",
+              "width": 160
+            }
+          ],
+          "name": "Dozy Doe",
+          "popularity": 49,
+          "type": "artist",
+          "uri": "spotify:artist:3M5TXkT9LxgZPcLSKBr4Pf"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4OrizGCKhOrW6iDDJHN9xd"
+          },
+          "followers": {
+            "href": null,
+            "total": 330576
+          },
+          "genres": [
+            "brooklyn indie",
+            "dream pop",
+            "dreamo",
+            "indie rock",
+            "indie surf",
+            "modern dream pop",
+            "neo-psychedelic",
+            "nu gaze",
+            "shoegaze"
+          ],
+          "href": "https://api.spotify.com/v1/artists/4OrizGCKhOrW6iDDJHN9xd",
+          "id": "4OrizGCKhOrW6iDDJHN9xd",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb2d8c6997462537503b40693b",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab676161000051742d8c6997462537503b40693b",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f1782d8c6997462537503b40693b",
+              "width": 160
+            }
+          ],
+          "name": "DIIV",
+          "popularity": 52,
+          "type": "artist",
+          "uri": "spotify:artist:4OrizGCKhOrW6iDDJHN9xd"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/78Pm7H24T9om74ZfNs4UF7"
+          },
+          "followers": {
+            "href": null,
+            "total": 314
+          },
+          "genres": [
+            "background jazz"
+          ],
+          "href": "https://api.spotify.com/v1/artists/78Pm7H24T9om74ZfNs4UF7",
+          "id": "78Pm7H24T9om74ZfNs4UF7",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2732965bd4a41d072c516db8ba7",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e022965bd4a41d072c516db8ba7",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048512965bd4a41d072c516db8ba7",
+              "width": 64
+            }
+          ],
+          "name": "Foster Davies",
+          "popularity": 43,
+          "type": "artist",
+          "uri": "spotify:artist:78Pm7H24T9om74ZfNs4UF7"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7bEQ9t8c6DoNYBiTH7EmFB"
+          },
+          "followers": {
+            "href": null,
+            "total": 0
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/7bEQ9t8c6DoNYBiTH7EmFB",
+          "id": "7bEQ9t8c6DoNYBiTH7EmFB",
+          "images": [],
+          "name": "Davis",
+          "popularity": 4,
+          "type": "artist",
+          "uri": "spotify:artist:7bEQ9t8c6DoNYBiTH7EmFB"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1lfkgC6uwLGN8qsvoaRgzT"
+          },
+          "followers": {
+            "href": null,
+            "total": 309
+          },
+          "genres": [
+            "background jazz"
+          ],
+          "href": "https://api.spotify.com/v1/artists/1lfkgC6uwLGN8qsvoaRgzT",
+          "id": "1lfkgC6uwLGN8qsvoaRgzT",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eba242bb81c49da29fcd207220",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174a242bb81c49da29fcd207220",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178a242bb81c49da29fcd207220",
+              "width": 160
+            }
+          ],
+          "name": "The Bob Davis Group",
+          "popularity": 38,
+          "type": "artist",
+          "uri": "spotify:artist:1lfkgC6uwLGN8qsvoaRgzT"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3iD04P6Y5jqPtEZT78QL4r"
+          },
+          "followers": {
+            "href": null,
+            "total": 1
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/3iD04P6Y5jqPtEZT78QL4r",
+          "id": "3iD04P6Y5jqPtEZT78QL4r",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb10698ea3f11ad1859d923ffd",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab6761610000517410698ea3f11ad1859d923ffd",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f17810698ea3f11ad1859d923ffd",
+              "width": 160
+            }
+          ],
+          "name": "Daccz the King of Sway",
+          "popularity": 28,
+          "type": "artist",
+          "uri": "spotify:artist:3iD04P6Y5jqPtEZT78QL4r"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5nk8TLI3DoGV9Fyaa7V9JL"
+          },
+          "followers": {
+            "href": null,
+            "total": 106
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/5nk8TLI3DoGV9Fyaa7V9JL",
+          "id": "5nk8TLI3DoGV9Fyaa7V9JL",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5ebc00012bc20dd6734ab79d2bb",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab67616100005174c00012bc20dd6734ab79d2bb",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f178c00012bc20dd6734ab79d2bb",
+              "width": 160
+            }
+          ],
+          "name": "The Dox Band",
+          "popularity": 38,
+          "type": "artist",
+          "uri": "spotify:artist:5nk8TLI3DoGV9Fyaa7V9JL"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6GjywyZ0Qtsu0f95gL5CDG"
+          },
+          "followers": {
+            "href": null,
+            "total": 101
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/6GjywyZ0Qtsu0f95gL5CDG",
+          "id": "6GjywyZ0Qtsu0f95gL5CDG",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab6761610000e5eb3446cf8b1862cadfb07b8b4a",
+              "width": 640
+            },
+            {
+              "height": 320,
+              "url": "https://i.scdn.co/image/ab676161000051743446cf8b1862cadfb07b8b4a",
+              "width": 320
+            },
+            {
+              "height": 160,
+              "url": "https://i.scdn.co/image/ab6761610000f1783446cf8b1862cadfb07b8b4a",
+              "width": 160
+            }
+          ],
+          "name": "Dozy Sounds",
+          "popularity": 55,
+          "type": "artist",
+          "uri": "spotify:artist:6GjywyZ0Qtsu0f95gL5CDG"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6KQFfJSgjRRlhCwp4tGhq8"
+          },
+          "followers": {
+            "href": null,
+            "total": 18
+          },
+          "genres": [],
+          "href": "https://api.spotify.com/v1/artists/6KQFfJSgjRRlhCwp4tGhq8",
+          "id": "6KQFfJSgjRRlhCwp4tGhq8",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273d4f4f4ab676c0d15d4e6a378",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02d4f4f4ab676c0d15d4e6a378",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851d4f4f4ab676c0d15d4e6a378",
+              "width": 64
+            }
+          ],
+          "name": "Dacus M",
+          "popularity": 22,
+          "type": "artist",
+          "uri": "spotify:artist:6KQFfJSgjRRlhCwp4tGhq8"
+        }
+      ],
+      "limit": 20,
+      "next": "https://api.spotify.com/v1/search?query=remaster%2520track%3ADoxy%2520artist%3AMiles%2520Davis&type=artist&locale=ja%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=20&limit=20",
+      "offset": 0,
+      "previous": null,
+      "total": 1000
+    }
+  },
   "musicchart": {
     "plots": [
       {
