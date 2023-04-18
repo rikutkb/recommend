@@ -12,7 +12,6 @@ try {
 } catch (err) {
     console.log(err);
 }
-
 // json ファイルの生成
 fs.readdirSync(apiPath).reduce((api, file) => {
     if (api === undefined) api = {};

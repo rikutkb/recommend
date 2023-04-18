@@ -36,21 +36,8 @@ const ArtistsListView: React.FC<Props> = ({ }) => {
     }, [])
     return (
         <Stack spacing={1}>
-
-            <Autocomplete
-                value={value}
-                onChange={(event: any, newValue: string | null) => {
-                    setValue(newValue);
-                }}
-                inputValue={inputValue}
-                onInputChange={(event, newInputValue) => {
-                    setInputValue(newInputValue);
-                }}
-                id="controllable-states-demo"
-                options={options}
-                sx={{ width: 200 }}
-                renderInput={(params) => <TextField {...params} label="Controllable" />}
-            />
+            <TextField id="outlined-search" label="Artists field" type="search" 
+                sx={{ width: 200 }}/>
             <List sx={{
                 width: '100%',
                 maxWidth: 200,

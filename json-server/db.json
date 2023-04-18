@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "JSONサーバーについて",
+      "author": "John Smith"
+    },
+    {
+      "id": 2,
+      "title": "RESTful APIの設計",
+      "author": "Jane Doe"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "body": "素晴らしい記事です！",
+      "author": "Mike Johnson"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "body": "とても役に立ちました。",
+      "author": "Amy Lee"
+    }
+  ]
+}

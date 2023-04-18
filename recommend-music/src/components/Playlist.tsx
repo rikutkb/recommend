@@ -36,6 +36,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                 value={value}
                 onChange={(event: any, newValue: string | null) => {
                     setValue(newValue);
+                    console.log(newValue)
                 }}
                 inputValue={inputValue}
                 onInputChange={(event, newInputValue) => {
@@ -44,7 +45,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                 id="controllable-states-demo"
                 options={options}
                 sx={{ width: 200 }}
-                renderInput={(params) => <TextField {...params} label="Controllable" />}
+                renderInput={(params) => <TextField {...params} label="プレイリスト" />}
             />
             <List sx={{
                 width: '100%',

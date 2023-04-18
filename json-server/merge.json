@@ -14475,5 +14475,181 @@
     },
     "type": "playlist",
     "uri": "spotify:playlist:37Mdd3siY13WEc61U6Rsgy"
+  },
+  "playlists": {
+    "playlists": {
+      "href": "https://api.spotify.com/v1/search?query=%E5%AE%87%E5%A4%9A%E7%94%B0%E3%81%B2%E3%81%8B%E3%82%8B&type=playlist&locale=ja%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=0&limit=4",
+      "items": [
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/6z1WlKjb2XbnevvughvqCu"
+          },
+          "href": "https://api.spotify.com/v1/playlists/6z1WlKjb2XbnevvughvqCu",
+          "id": "6z1WlKjb2XbnevvughvqCu",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2731e15f2777923e7cc546dcee7ab67616d0000b273a135839c29cf3bec7c840ad7ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2731e15f2777923e7cc546dcee7ab67616d0000b273a135839c29cf3bec7c840ad7ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2731e15f2777923e7cc546dcee7ab67616d0000b273a135839c29cf3bec7c840ad7ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 60
+            }
+          ],
+          "name": "宇多田ヒカル　ベストヒット",
+          "owner": {
+            "display_name": "光",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/31utdjbsk4klqxl36wzernz4j4cu"
+            },
+            "href": "https://api.spotify.com/v1/users/31utdjbsk4klqxl36wzernz4j4cu",
+            "id": "31utdjbsk4klqxl36wzernz4j4cu",
+            "type": "user",
+            "uri": "spotify:user:31utdjbsk4klqxl36wzernz4j4cu"
+          },
+          "primary_color": null,
+          "public": null,
+          "snapshot_id": "MTEsY2NhYjMzYThkMjlhMzhmNTVjNTFjOTFkOGIyYjJjMzQ4OTYzMGI1YQ==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/6z1WlKjb2XbnevvughvqCu/tracks",
+            "total": 10
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:6z1WlKjb2XbnevvughvqCu"
+        },
+        {
+          "collaborative": false,
+          "description": "",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/1aCulMQymEE4EdrEbXByJJ"
+          },
+          "href": "https://api.spotify.com/v1/playlists/1aCulMQymEE4EdrEbXByJJ",
+          "id": "1aCulMQymEE4EdrEbXByJJ",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://mosaic.scdn.co/640/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://mosaic.scdn.co/300/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 300
+            },
+            {
+              "height": 60,
+              "url": "https://mosaic.scdn.co/60/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+              "width": 60
+            }
+          ],
+          "name": "宇多田ヒカル　ベスト",
+          "owner": {
+            "display_name": "potato",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "primary_color": null,
+          "public": null,
+          "snapshot_id": "MTUsMjM2NmYyZmI0ZGU2N2Q3MGQ0YmEzOWIwMGNlZmQ1ODFiYzU1ZjY3Mw==",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/1aCulMQymEE4EdrEbXByJJ/tracks",
+            "total": 12
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:1aCulMQymEE4EdrEbXByJJ"
+        },
+        {
+          "collaborative": false,
+          "description": "The all-timers from Japanese pop superstar, Hikaru Utada.",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUpdd1oGKt2o"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUpdd1oGKt2o",
+          "id": "37i9dQZF1DWUpdd1oGKt2o",
+          "images": [
+            {
+              "height": null,
+              "url": "https://i.scdn.co/image/ab67706f000000035ab71e7be930f3f063f42bcb",
+              "width": null
+            }
+          ],
+          "name": "This Is 宇多田ヒカル (Hikaru Utada)",
+          "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": null,
+          "snapshot_id": "MTY4MTQyMTY1NCwwMDAwMDAwMDUxNjI2NTNjNmZiZjQ4Y2Y5NTY0MTMwNzkxYzUyNTI0",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUpdd1oGKt2o/tracks",
+            "total": 72
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DWUpdd1oGKt2o"
+        },
+        {
+          "collaborative": false,
+          "description": "山陰発ピアノPOPバンド=Official髭男dism。ブラックミュージックをルーツに繰り広げられる\"髭男\"の魔法のようなポップスをひとつのプレイリストに。",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0MkpDFqXa80"
+          },
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0MkpDFqXa80",
+          "id": "37i9dQZF1DX0MkpDFqXa80",
+          "images": [
+            {
+              "height": null,
+              "url": "https://i.scdn.co/image/ab67706f00000003b6dafc90c0f49db110968839",
+              "width": null
+            }
+          ],
+          "name": "This Is Official髭男dism",
+          "owner": {
+            "display_name": "Spotify",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/spotify"
+            },
+            "href": "https://api.spotify.com/v1/users/spotify",
+            "id": "spotify",
+            "type": "user",
+            "uri": "spotify:user:spotify"
+          },
+          "primary_color": null,
+          "public": null,
+          "snapshot_id": "MTY3MzM2MjgwMCwwMDAwMDAwMDM0YzRmZmEwZDQ5MmU5YzdhOGU0OTk1NGZmNzVkOTZh",
+          "tracks": {
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0MkpDFqXa80/tracks",
+            "total": 62
+          },
+          "type": "playlist",
+          "uri": "spotify:playlist:37i9dQZF1DX0MkpDFqXa80"
+        }
+      ],
+      "limit": 4,
+      "next": "https://api.spotify.com/v1/search?query=%E5%AE%87%E5%A4%9A%E7%94%B0%E3%81%B2%E3%81%8B%E3%82%8B&type=playlist&locale=ja%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=4&limit=4",
+      "offset": 0,
+      "previous": null,
+      "total": 1000
+    }
   }
 }
