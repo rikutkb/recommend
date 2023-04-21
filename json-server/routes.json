@@ -1,3 +1,5 @@
 {
-    "/api/*": "/$1"
-  }
+    "/api/playlists/:id": "/api/playlists/:id",
+    "/api/playlists": "/api/play-lists"
+
+}

@@ -3,7 +3,7 @@
         "start": "/data/api/*.json"
     },
     "scripts": {
-        "start": "node merge-json.js",
+        "start": "node server.js",
         "watch": "npm-watch"
     },
     "devDependencies": {

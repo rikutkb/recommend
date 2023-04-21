@@ -9,7 +9,7 @@ services:
    volumes:
     - ./json-server:/data
     - json-node-modules:/data/node_modules
-   command:  sh -c 'npm run watch & json-server --p 8080 --watch merge.json --host 0.0.0.0'
+   command:  sh -c 'npm run watch'
   node:
     build: ./recommend-music
     volumes:

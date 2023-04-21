@@ -1,0 +1,1232 @@
+{
+    "collaborative": false,
+    "description": "",
+    "external_urls": {
+      "spotify": "https://open.spotify.com/playlist/1aCulMQymEE4EdrEbXByJJ"
+    },
+    "followers": {
+      "href": null,
+      "total": 14655
+    },
+    "href": "https://api.spotify.com/v1/playlists/1aCulMQymEE4EdrEbXByJJ",
+    "id": "1aCulMQymEE4EdrEbXByJJ",
+    "images": [
+      {
+        "height": 640,
+        "url": "https://mosaic.scdn.co/640/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+        "width": 640
+      },
+      {
+        "height": 300,
+        "url": "https://mosaic.scdn.co/300/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+        "width": 300
+      },
+      {
+        "height": 60,
+        "url": "https://mosaic.scdn.co/60/ab67616d0000b27302b41c3ffd6c42bb3624fc48ab67616d0000b273189e41798cd255d340b21be9ab67616d0000b2734fa36b14a276fe560940baa0ab67616d0000b273b8ae5963d06963607272f19d",
+        "width": 60
+      }
+    ],
+    "name": "宇多田ヒカル　ベスト",
+    "owner": {
+      "display_name": "potato",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+      },
+      "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+      "id": "gwcujwc8237j7o4tg8jybmw3i",
+      "type": "user",
+      "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "MTUsMjM2NmYyZmI0ZGU2N2Q3MGQ0YmEzOWIwMGNlZmQ1ODFiYzU1ZjY3Mw==",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/1aCulMQymEE4EdrEbXByJJ/tracks?offset=0&limit=100&locale=ja,en-US;q=0.9,en;q=0.8",
+      "items": [
+        {
+          "added_at": "2018-08-10T11:09:37Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "album",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/3ziRkpxFfVidJOkuldtzdJ"
+              },
+              "href": "https://api.spotify.com/v1/albums/3ziRkpxFfVidJOkuldtzdJ",
+              "id": "3ziRkpxFfVidJOkuldtzdJ",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273a3148b4c0a52a7dedbd157d0",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02a3148b4c0a52a7dedbd157d0",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851a3148b4c0a52a7dedbd157d0",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "HEART STATION",
+              "release_date": "2008-03-19",
+              "release_date_precision": "day",
+              "total_tracks": 13,
+              "type": "album",
+              "uri": "spotify:album:3ziRkpxFfVidJOkuldtzdJ"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 325346,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00602103"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2ZFIl19BixWZ4U0Z7yOQco"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2ZFIl19BixWZ4U0Z7yOQco",
+            "id": "2ZFIl19BixWZ4U0Z7yOQco",
+            "is_local": false,
+            "name": "Flavor Of Life - Ballad Version",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:2ZFIl19BixWZ4U0Z7yOQco"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:08:47Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/4bv8gTM5MKYCNOb4nTkxBA"
+              },
+              "href": "https://api.spotify.com/v1/albums/4bv8gTM5MKYCNOb4nTkxBA",
+              "id": "4bv8gTM5MKYCNOb4nTkxBA",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273415618f258859c4fee7fbbb1",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02415618f258859c4fee7fbbb1",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851415618f258859c4fee7fbbb1",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "COLORS",
+              "release_date": "2003-01-29",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:4bv8gTM5MKYCNOb4nTkxBA"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 240066,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00202516"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1JUqd7U7Mq0w7JqrJZAX6Q"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1JUqd7U7Mq0w7JqrJZAX6Q",
+            "id": "1JUqd7U7Mq0w7JqrJZAX6Q",
+            "is_local": false,
+            "name": "COLORS",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1JUqd7U7Mq0w7JqrJZAX6Q"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:08:38Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/3RjNDPYmF6z1fB5DjPH6oZ"
+              },
+              "href": "https://api.spotify.com/v1/albums/3RjNDPYmF6z1fB5DjPH6oZ",
+              "id": "3RjNDPYmF6z1fB5DjPH6oZ",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2738729af6e828cfae6cd4c544a",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e028729af6e828cfae6cd4c544a",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048518729af6e828cfae6cd4c544a",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "光",
+              "release_date": "2002-03-20",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:3RjNDPYmF6z1fB5DjPH6oZ"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 301400,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00200031"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/26RplUsKy7OVN4Uy71iGGi"
+            },
+            "href": "https://api.spotify.com/v1/tracks/26RplUsKy7OVN4Uy71iGGi",
+            "id": "26RplUsKy7OVN4Uy71iGGi",
+            "is_local": false,
+            "name": "光",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:26RplUsKy7OVN4Uy71iGGi"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:08:29Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5dTJMiE4RjU7TmY4Yo2Ia6"
+              },
+              "href": "https://api.spotify.com/v1/albums/5dTJMiE4RjU7TmY4Yo2Ia6",
+              "id": "5dTJMiE4RjU7TmY4Yo2Ia6",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2737ff8346a72722b2686b528f2",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e027ff8346a72722b2686b528f2",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048517ff8346a72722b2686b528f2",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "SAKURAドロップス",
+              "release_date": "2002-05-09",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:5dTJMiE4RjU7TmY4Yo2Ia6"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 298693,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00200783"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/26YaM9JQDPiQFcPraYU2Sl"
+            },
+            "href": "https://api.spotify.com/v1/tracks/26YaM9JQDPiQFcPraYU2Sl",
+            "id": "26YaM9JQDPiQFcPraYU2Sl",
+            "is_local": false,
+            "name": "SAKURAドロップス",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:26YaM9JQDPiQFcPraYU2Sl"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:08:06Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "album",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/3BEJYAidehZixGSjDR6YqH"
+              },
+              "href": "https://api.spotify.com/v1/albums/3BEJYAidehZixGSjDR6YqH",
+              "id": "3BEJYAidehZixGSjDR6YqH",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27364660504d7bfb05c26c5817f",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0264660504d7bfb05c26c5817f",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485164660504d7bfb05c26c5817f",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "DEEP RIVER",
+              "release_date": "2002-06-19",
+              "release_date_precision": "day",
+              "total_tracks": 12,
+              "type": "album",
+              "uri": "spotify:album:3BEJYAidehZixGSjDR6YqH"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 286866,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00201108"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/34hX9EYRwA2KTKx9Y0U7YM"
+            },
+            "href": "https://api.spotify.com/v1/tracks/34hX9EYRwA2KTKx9Y0U7YM",
+            "id": "34hX9EYRwA2KTKx9Y0U7YM",
+            "is_local": false,
+            "name": "嘘みたいなI Love You",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:34hX9EYRwA2KTKx9Y0U7YM"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:07:47Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "album",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/35p2ZEVvpzepatSZB0Jqra"
+              },
+              "href": "https://api.spotify.com/v1/albums/35p2ZEVvpzepatSZB0Jqra",
+              "id": "35p2ZEVvpzepatSZB0Jqra",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273de7429e1cc67575d04c74cfb",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02de7429e1cc67575d04c74cfb",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851de7429e1cc67575d04c74cfb",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "First Love",
+              "release_date": "1999-03-10",
+              "release_date_precision": "day",
+              "total_tracks": 12,
+              "type": "album",
+              "uri": "spotify:album:35p2ZEVvpzepatSZB0Jqra"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 257293,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO09901670"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3MmAtS5q33iKDcRvu6U5p3"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3MmAtS5q33iKDcRvu6U5p3",
+            "id": "3MmAtS5q33iKDcRvu6U5p3",
+            "is_local": false,
+            "name": "First Love",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:3MmAtS5q33iKDcRvu6U5p3"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:07:36Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/26MRW8KTypeBOUrOMLQZYX"
+              },
+              "href": "https://api.spotify.com/v1/albums/26MRW8KTypeBOUrOMLQZYX",
+              "id": "26MRW8KTypeBOUrOMLQZYX",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273a836b2b2550fa822a78a136d",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02a836b2b2550fa822a78a136d",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851a836b2b2550fa822a78a136d",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Addicted To You",
+              "release_date": "1999-11-10",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:26MRW8KTypeBOUrOMLQZYX"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 318866,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO09917320"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1MOlnc1WByjEH39cW4uwG5"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1MOlnc1WByjEH39cW4uwG5",
+            "id": "1MOlnc1WByjEH39cW4uwG5",
+            "is_local": false,
+            "name": "Addicted To You - UP-IN-HEAVEN MIX",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1MOlnc1WByjEH39cW4uwG5"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:07:28Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5niHFycwsFLwtF6Jxta6UB"
+              },
+              "href": "https://api.spotify.com/v1/albums/5niHFycwsFLwtF6Jxta6UB",
+              "id": "5niHFycwsFLwtF6Jxta6UB",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273f91506a808d1390fe135a490",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02f91506a808d1390fe135a490",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851f91506a808d1390fe135a490",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Can You Keep A Secret?",
+              "release_date": "2001-02-16",
+              "release_date_precision": "day",
+              "total_tracks": 3,
+              "type": "album",
+              "uri": "spotify:album:5niHFycwsFLwtF6Jxta6UB"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 308800,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00100001"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1HffE3nW0DhKoWAiYthUtr"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1HffE3nW0DhKoWAiYthUtr",
+            "id": "1HffE3nW0DhKoWAiYthUtr",
+            "is_local": false,
+            "name": "Can You Keep A Secret?",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1HffE3nW0DhKoWAiYthUtr"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:07:21Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/0USIXcw0U2f5ZPcDADmWBv"
+              },
+              "href": "https://api.spotify.com/v1/albums/0USIXcw0U2f5ZPcDADmWBv",
+              "id": "0USIXcw0U2f5ZPcDADmWBv",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273834e9636e89868bca90659d8",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02834e9636e89868bca90659d8",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851834e9636e89868bca90659d8",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Wait & See ~リスク~",
+              "release_date": "2000-04-19",
+              "release_date_precision": "day",
+              "total_tracks": 5,
+              "type": "album",
+              "uri": "spotify:album:0USIXcw0U2f5ZPcDADmWBv"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 288466,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00000553"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6tgXdXcW8wdxrvJdv6IonZ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6tgXdXcW8wdxrvJdv6IonZ",
+            "id": "6tgXdXcW8wdxrvJdv6IonZ",
+            "is_local": false,
+            "name": "Wait & See ~リスク~",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:6tgXdXcW8wdxrvJdv6IonZ"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:07:11Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/4W2H7xevJ4sqXioiE9YkPx"
+              },
+              "href": "https://api.spotify.com/v1/albums/4W2H7xevJ4sqXioiE9YkPx",
+              "id": "4W2H7xevJ4sqXioiE9YkPx",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273600ddf58da1de2fd32c66136",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02600ddf58da1de2fd32c66136",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851600ddf58da1de2fd32c66136",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Flavor Of Life",
+              "release_date": "2007-02-28",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:4W2H7xevJ4sqXioiE9YkPx"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 287826,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00602102"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/416rHqqMmvSS7HkdJZ6Cdh"
+            },
+            "href": "https://api.spotify.com/v1/tracks/416rHqqMmvSS7HkdJZ6Cdh",
+            "id": "416rHqqMmvSS7HkdJZ6Cdh",
+            "is_local": false,
+            "name": "Flavor Of Life",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:416rHqqMmvSS7HkdJZ6Cdh"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:06:41Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/2wXEWu8WAfXMQvbDb5vzJv"
+              },
+              "href": "https://api.spotify.com/v1/albums/2wXEWu8WAfXMQvbDb5vzJv",
+              "id": "2wXEWu8WAfXMQvbDb5vzJv",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2732e6051a40b6275fef4c72a0f",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e022e6051a40b6275fef4c72a0f",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048512e6051a40b6275fef4c72a0f",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Automatic / time will tell",
+              "release_date": "1998-12-08",
+              "release_date_precision": "day",
+              "total_tracks": 3,
+              "type": "album",
+              "uri": "spotify:album:2wXEWu8WAfXMQvbDb5vzJv"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 312066,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO09831500"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1wLvwJisZFxQYqjWJ6x16t"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1wLvwJisZFxQYqjWJ6x16t",
+            "id": "1wLvwJisZFxQYqjWJ6x16t",
+            "is_local": false,
+            "name": "Automatic",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1wLvwJisZFxQYqjWJ6x16t"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        },
+        {
+          "added_at": "2018-08-10T11:06:32Z",
+          "added_by": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/user/gwcujwc8237j7o4tg8jybmw3i"
+            },
+            "href": "https://api.spotify.com/v1/users/gwcujwc8237j7o4tg8jybmw3i",
+            "id": "gwcujwc8237j7o4tg8jybmw3i",
+            "type": "user",
+            "uri": "spotify:user:gwcujwc8237j7o4tg8jybmw3i"
+          },
+          "is_local": false,
+          "primary_color": null,
+          "track": {
+            "album": {
+              "album_group": "single",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                  "id": "7lbSsjYACZHn1MSDXPxNF2",
+                  "name": "宇多田ヒカル",
+                  "type": "artist",
+                  "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+                }
+              ],
+              "available_markets": [],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/0A2M09Y9jbbiXccH4L2knS"
+              },
+              "href": "https://api.spotify.com/v1/albums/0A2M09Y9jbbiXccH4L2knS",
+              "id": "0A2M09Y9jbbiXccH4L2knS",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27366560ab175d54ae776d3a4d9",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0266560ab175d54ae776d3a4d9",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485166560ab175d54ae776d3a4d9",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "traveling",
+              "release_date": "2001-11-28",
+              "release_date_precision": "day",
+              "total_tracks": 4,
+              "type": "album",
+              "uri": "spotify:album:0A2M09Y9jbbiXccH4L2knS"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7lbSsjYACZHn1MSDXPxNF2"
+                },
+                "href": "https://api.spotify.com/v1/artists/7lbSsjYACZHn1MSDXPxNF2",
+                "id": "7lbSsjYACZHn1MSDXPxNF2",
+                "name": "宇多田ヒカル",
+                "type": "artist",
+                "uri": "spotify:artist:7lbSsjYACZHn1MSDXPxNF2"
+              }
+            ],
+            "available_markets": [],
+            "disc_number": 1,
+            "duration_ms": 314626,
+            "episode": false,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "JPTO00102174"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1kD1WnevnTxGlWgZpO5cZc"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1kD1WnevnTxGlWgZpO5cZc",
+            "id": "1kD1WnevnTxGlWgZpO5cZc",
+            "is_local": false,
+            "name": "traveling",
+            "popularity": 0,
+            "preview_url": null,
+            "track": true,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1kD1WnevnTxGlWgZpO5cZc"
+          },
+          "video_thumbnail": {
+            "url": null
+          }
+        }
+      ],
+      "limit": 100,
+      "next": null,
+      "offset": 0,
+      "previous": null,
+      "total": 12
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:1aCulMQymEE4EdrEbXByJJ"
+  }
