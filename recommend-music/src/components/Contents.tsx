@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import PlaylistView from './Playlist';
 import MusicChart from './MusicChart';
 import { Grid, Stack } from '@mui/material';

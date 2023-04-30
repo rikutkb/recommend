@@ -1,7 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import test from './sample.json';
 import Header from './components/Header';
 import { Grid, Stack } from '@mui/material';
 import Contents from './components/Contents';

@@ -7,16 +7,15 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 
-const options = ['あいみょん', 'test-2'];
 type Props = {
     //playlist: Playlist
     //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
 }
 
-const PlaylistView: React.FC<Props> = ({ }) => {
+const PlaylistView: React.FC<Props> = () => {
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
-    const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
+    //const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
     const [inputValue, setInputValue] = React.useState('');
     const handleClick = (track: Track) => {
         console.log("----");
@@ -30,7 +29,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
         playlists.map((playlist) => console.log(playlist.name))
     }
     const fetchPlaylist = async (id:string) => {
-        if(id !==""){
+        if(id !== ""){
             const response = await fetch(`http://localhost:8080/api/playlists/${id}`);
             const data: Playlist = await response.json();
             console.log(data.tracks)
@@ -38,16 +37,15 @@ const PlaylistView: React.FC<Props> = ({ }) => {
         }
     }
     useEffect(() => {
-
         fetchPlaylists();
-
+     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <Stack spacing={1}>
             <Autocomplete
                 onChange={(event, item) => {
                     if(item !== null){
-                        setSelectedPlayList(item);
+                        //setSelectedPlayList(item);
                         fetchPlaylist(item.id);
                     }
                   }}

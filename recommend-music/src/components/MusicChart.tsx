@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PlaylistItem from "./PlaylistItem";
-import List from '@mui/material/List';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Cell } from 'recharts';
 import { MusicPlots } from "./Types";
 type Props = {
@@ -10,7 +8,7 @@ type Props = {
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
-const MusicChart: React.FC<Props> = ({ }) => {
+const MusicChart: React.FC<Props> = () => {
     const [musicPlots, setMusicPlots] = useState<MusicPlots>();
     useEffect(() => {
         const fetchMusicPlots = async () => {
