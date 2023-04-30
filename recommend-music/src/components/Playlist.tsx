@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PlaylistItem from "./PlaylistItem";
 import List from '@mui/material/List';
 
-import { Playlist, Track } from "./Types";
+import { Playlist, Track ,Playlists,Tracks} from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
@@ -14,37 +14,51 @@ type Props = {
 }
 
 const PlaylistView: React.FC<Props> = ({ }) => {
-    const [playlist, setPlaylist] = useState<Playlist>();
-    const [value, setValue] = React.useState<string | null>(options[0]);
+    const [tracks, setTracks] = useState<Tracks>({} as Tracks);
+    const [playlists, setPlaylists] = useState<Playlist[]>([]);
+    const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
     const [inputValue, setInputValue] = React.useState('');
     const handleClick = (track: Track) => {
         console.log("----");
     }
-    useEffect(() => {
-        const fetchPlaylist = async () => {
-            const response = await fetch("http://localhost:8080/playlist");
+    const fetchPlaylists = async () => {
+        const response = await fetch("http://localhost:8080/api/playlists");
+        const data: Playlists = await response.json();
+        console.log(data.playlists.items)
+        setPlaylists(data.playlists.items)
+        console.log(playlists)
+        playlists.map((playlist) => console.log(playlist.name))
+    }
+    const fetchPlaylist = async (id:string) => {
+        if(id !==""){
+            const response = await fetch(`http://localhost:8080/api/playlists/${id}`);
             const data: Playlist = await response.json();
-            setPlaylist(data)
+            console.log(data.tracks)
+            setTracks(data.tracks)
         }
-        fetchPlaylist();
+    }
+    useEffect(() => {
+
+        fetchPlaylists();
 
     }, [])
     return (
         <Stack spacing={1}>
-
             <Autocomplete
-                value={value}
-                onChange={(event: any, newValue: string | null) => {
-                    setValue(newValue);
-                    console.log(newValue)
-                }}
+                onChange={(event, item) => {
+                    if(item !== null){
+                        setSelectedPlayList(item);
+                        fetchPlaylist(item.id);
+                    }
+                  }}
                 inputValue={inputValue}
                 onInputChange={(event, newInputValue) => {
                     setInputValue(newInputValue);
                 }}
                 id="controllable-states-demo"
-                options={options}
+                options={playlists}
                 sx={{ width: 200 }}
+                getOptionLabel={(option) => option.name}
                 renderInput={(params) => <TextField {...params} label="プレイリスト" />}
             />
             <List sx={{
@@ -57,11 +71,11 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                 '& ul': { padding: 0 }
             }}>
                 {
-                    playlist && playlist.tracks.items.map((track) => (
+                    Array.isArray(tracks.items) ? tracks.items.map((track) => (
                         <PlaylistItem key={track.track.id}
                             track={track.track}
                             handleClick={handleClick}></PlaylistItem>
-                    ))
+                    )):null
                 }
             </List>
         </Stack>
