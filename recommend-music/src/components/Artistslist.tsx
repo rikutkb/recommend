@@ -26,7 +26,7 @@ const ArtistsListView: React.FC<Props> = ({ }) => {
     }
     useEffect(() => {
         const fetchArtists = async () => {
-            const response = await fetch("http://localhost:8080/artists");
+            const response = await fetch("http://localhost:8080/api/artists");
             console.log(response)
             const data: Artists = await response.json();
             setArtists(data)
@@ -50,7 +50,7 @@ const ArtistsListView: React.FC<Props> = ({ }) => {
                 {
                     artistsList && artistsList.artists.items.map((artist) => (
 
-                        <ListItem>
+                        <ListItem key={artist.id}>
                             <ListItemAvatar>
                                 <Avatar src={artist.images[0]?.url} />
 

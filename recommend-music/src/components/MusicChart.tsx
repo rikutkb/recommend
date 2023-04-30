@@ -14,7 +14,7 @@ const MusicChart: React.FC<Props> = ({ }) => {
     const [musicPlots, setMusicPlots] = useState<MusicPlots>();
     useEffect(() => {
         const fetchMusicPlots = async () => {
-            const response = await fetch("http://localhost:8080/musicchart");
+            const response = await fetch("http://localhost:8080/api/musicchart");
             const data: MusicPlots = await response.json();
             setMusicPlots(data)
             console.log(data);

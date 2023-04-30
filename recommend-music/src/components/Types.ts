@@ -78,6 +78,17 @@ export interface Tracks {
         track: Track;
     }[];
 }
+export interface Playlists{
+    playlists: {
+        href: string;
+        items: Playlist[];
+        limit: number;
+        next: string;
+        offset: number;
+        previous: string;
+        total: number;
+    }
+}
 
 export interface Playlist {
     collaborative: boolean;
