@@ -9,7 +9,11 @@ services:
    volumes:
     - ./json-server:/data
     - json-node-modules:/data/node_modules
+   networks:
+      recommend-internal:
+        ipv4_address: 172.31.0.6
    command:  sh -c 'npm run watch'
+
   node:
     build: ./recommend-music
     volumes:
@@ -22,7 +26,18 @@ services:
     build: ./proxy
     ports:
       - '8000:8000'
+    volumes:
+      - ./proxy:/go/src/app
+    networks:
+      recommend-internal:
+        ipv4_address: 172.31.0.7
 
+networks:
+  recommend-internal:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.31.0.0/24"
 volumes:
   react-node-modules:
   json-node-modules:
