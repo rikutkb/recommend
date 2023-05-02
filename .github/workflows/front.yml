@@ -27,5 +27,5 @@ jobs:
           echo Copy S3...
           aws s3 sync ./recommend-music/build s3://spotify-app-react-static --region ap-northeast-1
           echo Delete Cloudfront cache...
-          aws cloudfront create-invalidation --distribution-id E3OZWXUBSIJ95K --paths "/index.html"
+          aws cloudfront create-invalidation --distribution-id --region ap-northeast-1 E3OZWXUBSIJ95K --paths "/index.html"
           echo Success!
