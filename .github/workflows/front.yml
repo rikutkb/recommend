@@ -25,7 +25,7 @@ jobs:
         run: |
           # S3のbucket-for-deploying-react-projectバケットにデプロイ
           echo Copy S3...
-          aws s3 sync app/build s3://spotify-app-react-static
+          aws s3 sync app/build s3://spotify-app-react-static --region ap-northeast-1
           echo Delete Cloudfront cache...
           aws cloudfront create-invalidation --distribution-id E3OZWXUBSIJ95K --paths "/index.html"
           echo Success!
