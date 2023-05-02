@@ -24,7 +24,7 @@ export default function Header() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Music Recommend
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" href="https://accounts.spotify.com/authorize?client_id=114df74c5dea446a90e373e5985b73d8&response_type=code&redirect_uri=http://localhost:3000/callback">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>

@@ -19,7 +19,7 @@ const ArtistsListView: React.FC<Props> = () => {
 
     useEffect(() => {
         const fetchArtists = async () => {
-            const response = await fetch("http://localhost:8080/api/artists");
+            const response = await fetch("http://localhost:8000/v1/search?q=a");
             console.log(response)
             const data: Artists = await response.json();
             setArtists(data)
