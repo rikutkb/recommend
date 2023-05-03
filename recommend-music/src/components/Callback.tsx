@@ -47,10 +47,7 @@ export default function Callback() {
     fetchToken().then(()=>{
       fetchUserInfo();
     });
-
-    
-
-  }, []);
+  }, [code]);
 
   return (
     <div>
