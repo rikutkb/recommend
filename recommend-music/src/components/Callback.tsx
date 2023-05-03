@@ -24,11 +24,11 @@ export default function Callback() {
           const obj: {[key: string]: string} = {
             'grant_type': 'authorization_code',
             'code': code as string,
-            'redirect_uri': 'http://localhost:3000/callback'
+            'redirect_uri': '/callback'
           }
         const method = 'POST';
         const body = Object.keys(obj).map((key)=>key+"="+encodeURIComponent(obj[key])).join("&");
-        const response = await fetch('http://localhost:8000/api/token',{method, headers, body, mode: "cors",credentials: 'include'});
+        const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/token`,{method, headers, body, mode: "cors",credentials: 'include'});
         console.log(response);
 
     };

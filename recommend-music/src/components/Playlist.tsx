@@ -21,7 +21,7 @@ const PlaylistView: React.FC<Props> = () => {
         console.log("----");
     }
     const fetchPlaylists = async () => {
-        const response = await fetch("http://localhost:8080/api/playlists");
+        const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/playlists`);
         const data: Playlists = await response.json();
         console.log(data.playlists.items)
         setPlaylists(data.playlists.items)
@@ -30,7 +30,7 @@ const PlaylistView: React.FC<Props> = () => {
     }
     const fetchPlaylist = async (id:string) => {
         if(id !== ""){
-            const response = await fetch(`http://localhost:8080/api/playlists/${id}`);
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/playlists/${id}`);
             const data: Playlist = await response.json();
             console.log(data.tracks)
             setTracks(data.tracks)
