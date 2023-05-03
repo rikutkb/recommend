@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PlaylistItem from "./PlaylistItem";
 import List from '@mui/material/List';
 
-import { Playlist, Track ,Playlists,Tracks} from "./Types";
+import { Playlist, Track, Playlists, Tracks } from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
@@ -23,37 +23,37 @@ const PlaylistView: React.FC<Props> = () => {
         console.log("----");
     }
     const fetchPlaylists = async () => {
-        const response = await fetch(`https://api.spotify.com/v1/users/${UserID}/playlists`,{
-            headers: {'Authorization': `Bearer ${AccessToken}`}
+        const response = await fetch(`https://api.spotify.com/v1/users/${UserID}/playlists`, {
+            headers: { 'Authorization': `Bearer ${AccessToken}` }
         });
         const data: Playlists = await response.json();
         setPlaylists(data.items)
         playlists.map((playlist) => console.log(playlist.name))
     }
-    const fetchPlaylist = async (id:string) => {
-        if(id !== ""){
-            const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`,{
-                headers: {'Authorization': `Bearer ${AccessToken}`}
+    const fetchPlaylist = async (id: string) => {
+        if (id !== "") {
+            const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
+                headers: { 'Authorization': `Bearer ${AccessToken}` }
             });
             const data: Playlist = await response.json();
             setTracks(data.tracks)
         }
     }
     useEffect(() => {
-        if(UserID !== null){
+        if (UserID !== null) {
             fetchPlaylists();
         }
-     // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <Stack spacing={1}>
             <Autocomplete
                 onChange={(event, item) => {
-                    if(item !== null){
+                    if (item !== null) {
                         //setSelectedPlayList(item);
                         fetchPlaylist(item.id);
                     }
-                  }}
+                }}
                 inputValue={inputValue}
                 onInputChange={(event, newInputValue) => {
                     setInputValue(newInputValue);
@@ -78,7 +78,7 @@ const PlaylistView: React.FC<Props> = () => {
                         <PlaylistItem key={track.track.id}
                             track={track.track}
                             handleClick={handleClick}></PlaylistItem>
-                    )):null
+                    )) : null
                 }
             </List>
         </Stack>

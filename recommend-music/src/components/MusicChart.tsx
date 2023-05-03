@@ -38,9 +38,9 @@ const MusicChart: React.FC<Props> = () => {
             <Tooltip cursor={{ strokeDasharray: '3 3' }} />
             <Scatter name="A school" data={musicPlots?.plots} fill="#8884d8">
                 {
-                musicPlots && musicPlots.plots.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                ))
+                    musicPlots && musicPlots.plots.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    ))
                 }
             </Scatter>
         </ScatterChart>
