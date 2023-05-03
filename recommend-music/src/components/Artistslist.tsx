@@ -16,21 +16,26 @@ type Props = {
 
 const ArtistsListView: React.FC<Props> = () => {
     const [artistsList, setArtists] = useState<Artists>();
-
+    const [searchArtistName, setSearchArtistName] = useState<string>("");
     useEffect(() => {
         const fetchArtists = async () => {
-            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/search?q=a`);
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/search?q=${searchArtistName}`);
             console.log(response)
             const data: Artists = await response.json();
             setArtists(data)
         }
         fetchArtists();
 
-    }, [])
+    }, [searchArtistName])
     return (
         <Stack spacing={1}>
-            <TextField id="outlined-search" label="Artists field" type="search" 
-                sx={{ width: 200 }}/>
+            <TextField
+            id="outlined-search"
+            label="Artists field"
+            type="search" 
+            value={searchArtistName}
+            onChange={ e => setSearchArtistName(e.target.value)}
+            sx={{ width: 200 }}/>
             <List sx={{
                 width: '100%',
                 maxWidth: 200,

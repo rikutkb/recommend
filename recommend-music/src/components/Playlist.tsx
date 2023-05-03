@@ -17,27 +17,32 @@ const PlaylistView: React.FC<Props> = () => {
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
     //const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
     const [inputValue, setInputValue] = React.useState('');
+    const UserID = localStorage.getItem("SpotifyUserID");
+    const AccessToken = localStorage.getItem("SpotifyAccessToken");
     const handleClick = (track: Track) => {
         console.log("----");
     }
     const fetchPlaylists = async () => {
-        const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/playlists`);
+        const response = await fetch(`https://api.spotify.com/v1/users/${UserID}/playlists`,{
+            headers: {'Authorization': `Bearer ${AccessToken}`}
+        });
         const data: Playlists = await response.json();
-        console.log(data.playlists.items)
-        setPlaylists(data.playlists.items)
-        console.log(playlists)
+        setPlaylists(data.items)
         playlists.map((playlist) => console.log(playlist.name))
     }
     const fetchPlaylist = async (id:string) => {
         if(id !== ""){
-            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/playlists/${id}`);
+            const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`,{
+                headers: {'Authorization': `Bearer ${AccessToken}`}
+            });
             const data: Playlist = await response.json();
-            console.log(data.tracks)
             setTracks(data.tracks)
         }
     }
     useEffect(() => {
-        fetchPlaylists();
+        if(UserID !== null){
+            fetchPlaylists();
+        }
      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (

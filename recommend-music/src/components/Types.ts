@@ -79,15 +79,13 @@ export interface Tracks {
     }[];
 }
 export interface Playlists{
-    playlists: {
-        href: string;
-        items: Playlist[];
-        limit: number;
-        next: string;
-        offset: number;
-        previous: string;
-        total: number;
-    }
+    href: string;
+    items: Playlist[];
+    limit: number;
+    next: string;
+    offset: number;
+    previous: string;
+    total: number;
 }
 
 export interface Playlist {
@@ -119,3 +117,20 @@ export interface MusicPlots {
     plots: MusicPlot[];
 }
 
+export interface SpotifyAPIToken{
+    access_token: string;
+    expires_in: number;
+    refresh_token: string;
+    token_type: string;
+}
+
+export interface UserProfile{
+    display_name: string;
+    email: string;
+    href: string;
+    id: string;
+    images: Image[];
+    product: string;
+    type: string;
+    uri: string;
+}
