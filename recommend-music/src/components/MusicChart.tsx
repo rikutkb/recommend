@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Cell } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell } from 'recharts';
 import { MusicPlots } from "./Types";
 type Props = {
     //playlist: Playlist
     //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
 }
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+const COLORS = ['red', 'blue', '#FFBB28', '#FF8042', 'red', 'pink'];
 
 const MusicChart: React.FC<Props> = () => {
     const [musicPlots, setMusicPlots] = useState<MusicPlots>();
+    const [playlistID, setPlaylistID] = useState<string>("37i9dQZF1DXaJxsaI3czLL");
+    const [artistID, setArtistID] = useState<string>("1snhtMLeb2DYoMOcVbb8iB")
     useEffect(() => {
         const fetchMusicPlots = async () => {
-            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/musicchart`);
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/pca?playlistID=${playlistID}&artistID=${artistID}`);
             const data: MusicPlots = await response.json();
             setMusicPlots(data)
             console.log(data);
@@ -33,13 +35,15 @@ const MusicChart: React.FC<Props> = () => {
             }}
         >
             <CartesianGrid />
-            <XAxis type="number" dataKey="x" name="stature" unit="-" />
-            <YAxis type="number" dataKey="y" name="weight" unit="-" />
+            <XAxis type="number" dataKey="x" name="x" unit="-" />
+            <YAxis type="number" dataKey="y" name="y" unit="-" />
+            <ZAxis type="category" dataKey="name" name="楽曲名" unit="" />
+
             <Tooltip cursor={{ strokeDasharray: '3 3' }} />
             <Scatter name="A school" data={musicPlots?.plots} fill="#8884d8">
                 {
                     musicPlots && musicPlots.plots.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        < Cell name={entry.name} key={`cell-${index}`} fill={entry.is_playlist ? COLORS[0] : COLORS[1]} />
                     ))
                 }
             </Scatter>
