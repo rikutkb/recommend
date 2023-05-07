@@ -10,11 +10,10 @@ import ListItem from '@mui/material/ListItem';
 import Avatar from '@mui/material/Avatar';
 
 type Props = {
-    //playlist: Playlist
-    //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
+    setArtistID: React.Dispatch<React.SetStateAction<string>>
 }
 
-const ArtistsListView: React.FC<Props> = () => {
+const ArtistsListView: React.FC<Props> = ({ setArtistID }: Props) => {
     const [artistsList, setArtists] = useState<Artists>();
     const [searchArtistName, setSearchArtistName] = useState<string>("");
     useEffect(() => {
@@ -47,7 +46,7 @@ const ArtistsListView: React.FC<Props> = () => {
                 {
                     artistsList && artistsList.artists.items.map((artist) => (
 
-                        <ListItem key={artist.id}>
+                        <ListItem key={artist.id} onClick={() => { setArtistID(artist.id) }}>
                             <ListItemAvatar>
                                 <Avatar src={artist.images[0]?.url} />
 

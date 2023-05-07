@@ -8,19 +8,17 @@ import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 
 type Props = {
-    //playlist: Playlist
-    //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
+    setPlaylistID: React.Dispatch<React.SetStateAction<string>>
+
 }
 
-const PlaylistView: React.FC<Props> = () => {
+const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
-    //const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
     const [inputValue, setInputValue] = React.useState('');
     const UserID = localStorage.getItem("SpotifyUserID");
     const AccessToken = localStorage.getItem("SpotifyAccessToken");
     const handleClick = (track: Track) => {
-        console.log("----");
     }
     const fetchPlaylists = async () => {
         const response = await fetch(`https://api.spotify.com/v1/users/${UserID}/playlists`, {
@@ -52,6 +50,7 @@ const PlaylistView: React.FC<Props> = () => {
                     if (item !== null) {
                         //setSelectedPlayList(item);
                         fetchPlaylist(item.id);
+                        setPlaylistID(item.id);
                     }
                 }}
                 inputValue={inputValue}

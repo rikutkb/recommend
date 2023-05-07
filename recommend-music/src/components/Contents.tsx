@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import PlaylistView from './Playlist';
-import MusicChart from './MusicChart';
+import MusicPlots from './MusicPlots';
 import { Grid, Stack } from '@mui/material';
 import ArtistsListView from './Artistslist';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+
 export default function Contents() {
+    const [playlistID, setPlaylistID] = useState<string>("37i9dQZF1DXaJxsaI3czLL");
+    const [artistID, setArtistID] = useState<string>("1snhtMLeb2DYoMOcVbb8iB")
     return (
         <Stack spacing={1}>
             <Grid container spacing={1}>
                 <Grid item xs={3}>
-                    <PlaylistView></PlaylistView>
+                    <PlaylistView setPlaylistID={setPlaylistID}></PlaylistView>
                 </Grid>
                 <Grid item xs={3}>
-                    <ArtistsListView></ArtistsListView>
+                    <ArtistsListView setArtistID={setArtistID}></ArtistsListView>
                 </Grid>
                 <Grid item xs={6}>
-                    <MusicChart></MusicChart>
+                    <MusicPlots playlistID={playlistID} artistID={artistID} ></MusicPlots>
                 </Grid>
             </Grid>
             <Grid>
@@ -24,7 +27,7 @@ export default function Contents() {
                     Send
                 </Button>
             </Grid>
-        </Stack>
+        </Stack >
 
     );
 }
