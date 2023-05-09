@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import { Grid, Stack } from '@mui/material';
 import Contents from './components/Contents';
+import Top from './components/Top';
 import Callback from './components/Callback';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Grid item xs={10}>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<Contents></Contents>} />
+                <Route path="/" element={<Top></Top>} />
+                <Route path="/recommend" element={<Contents></Contents>}></Route>
                 <Route path="/callback" element={<Callback></Callback>} />
               </Routes>
             </BrowserRouter>
