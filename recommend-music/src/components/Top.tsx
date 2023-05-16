@@ -1,12 +1,16 @@
 import { Grid, Stack } from '@mui/material';
+import React from "react";
 
-export default function Top() {
 
+const Top: React.FC = () => {
     return (
         <Stack spacing={1}>
             <Grid container spacing={1}>
+                使い方を書く
             </Grid>
         </Stack >
 
     );
 }
+
+export default Top;

@@ -63,5 +63,4 @@ const ArtistsListView: React.FC<Props> = ({ setArtistID }: Props) => {
     )
 }
 
-
-export default ArtistsListView
+export default ArtistsListView;

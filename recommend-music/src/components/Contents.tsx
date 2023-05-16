@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PlaylistView from './Playlist';
 import MusicPlots from './MusicPlots';
 import { Grid, Stack } from '@mui/material';

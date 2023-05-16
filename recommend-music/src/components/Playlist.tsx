@@ -21,11 +21,11 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
     const handleClick = (track: Track) => {
     }
     const fetchPlaylists = async () => {
-        const response = await fetch(`https://api.spotify.com/v1/users/${UserID}/playlists`, {
+        const response = await fetch(`https://api.spotify.com/v1/me/playlists`, {
             headers: { 'Authorization': `Bearer ${AccessToken}` }
         });
         const data: Playlists = await response.json();
-        setPlaylists(data.items)
+        setPlaylists(data.items);
         playlists.map((playlist) => console.log(playlist.name))
     }
     const fetchPlaylist = async (id: string) => {

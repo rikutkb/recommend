@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { SpotifyAPIToken, UserProfile } from './Types';
+import { useNavigate } from "react-router-dom";
 
-export default function Callback() {
+const Callback: React.FC = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const code = queryParams.get('code');
   const refFirstRef = useRef(true);
-
+  const navigate = useNavigate();
   useEffect(() => {
     // 認証コードや状態を使用してアクセストークンを取得する処理などを行う
     // ...
@@ -42,12 +43,16 @@ export default function Callback() {
       const userJson: UserProfile = await response.json();
       localStorage.setItem("SpotifyUserID", userJson.id);
       localStorage.setItem("SpotifyUserName", userJson.display_name);
-      console.log(userJson)
     }
     fetchToken().then(() => {
       fetchUserInfo();
-    });
-  }, [code]);
+    })
+      .then(() => {
+        setTimeout(() => {
+          navigate('/recommend');
+        }, 1000);
+      });
+  }, [code, navigate]);
 
   return (
     <div>
@@ -57,3 +62,4 @@ export default function Callback() {
   );
 }
 
+export default Callback;

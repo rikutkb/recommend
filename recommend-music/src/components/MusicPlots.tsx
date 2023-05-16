@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell, Legend } from 'recharts';
 import { MusicPlots } from "./Types";
-import { isAssertEntry } from "typescript";
 type Props = {
     playlistID: string
     artistID: string
@@ -13,11 +12,10 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
     const [musicPlots, setMusicPlots] = useState<MusicPlots>();
     useEffect(() => {
         const fetchMusicPlots = async () => {
-            if (artistID !== "" && playlistID != "") {
+            if (artistID !== "" && playlistID !== "") {
                 const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/pca?playlistID=${playlistID}&artistID=${artistID}`);
                 const data: MusicPlots = await response.json();
                 setMusicPlots(data)
-                console.log(data);
             }
         }
         fetchMusicPlots();
