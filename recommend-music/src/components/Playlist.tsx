@@ -26,7 +26,6 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
         });
         const data: Playlists = await response.json();
         setPlaylists(data.items);
-        playlists.map((playlist) => console.log(playlist.name))
     }
     const fetchPlaylist = async (id: string) => {
         if (id !== "") {
