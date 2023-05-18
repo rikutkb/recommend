@@ -14,8 +14,10 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
         const fetchMusicPlots = async () => {
             if (artistID !== "" && playlistID !== "") {
                 const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/pca?playlistID=${playlistID}&artistID=${artistID}`);
-                const data: MusicPlots = await response.json();
-                setMusicPlots(data)
+                if (response.status === 200) {
+                    const data: MusicPlots = await response.json();
+                    setMusicPlots(data)
+                }
             }
         }
         fetchMusicPlots();

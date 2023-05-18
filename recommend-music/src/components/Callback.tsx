@@ -9,7 +9,7 @@ const Callback: React.FC = () => {
   const code = queryParams.get('code');
   const refFirstRef = useRef(true);
   const navigate = useNavigate();
-  const [message, setMessage] = useState<String>('ログインに成功しました。');
+  const [success, setSuccess] = useState<boolean>(true);
   useEffect(() => {
     // 認証コードや状態を使用してアクセストークンを取得する処理などを行う
     // ...
@@ -34,7 +34,7 @@ const Callback: React.FC = () => {
       const body = Object.keys(obj).map((key) => key + "=" + encodeURIComponent(obj[key])).join("&");
       const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/token`, { method, headers, body, mode: "cors", credentials: 'include' });
       if (response.status !== 200) {
-        setMessage("認証に失敗しました。")
+        setSuccess(false);
         throw new Error("認証に失敗しました。")
       }
       const tokenJson: SpotifyAPIToken = await response.json();
@@ -61,8 +61,8 @@ const Callback: React.FC = () => {
 
   return (
     <div>
-      {/* コールバック後のページのコンテンツを表示 */}
-      <p>{message}</p>
+      {success ? <p>認証に成功しました。</p> : <p>ログインに失敗しました。</p>}
+
     </div>
   );
 }
