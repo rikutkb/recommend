@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { SpotifyAPIToken, UserProfile } from './Types';
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,7 @@ const Callback: React.FC = () => {
   const code = queryParams.get('code');
   const refFirstRef = useRef(true);
   const navigate = useNavigate();
+  const [message, setMessage] = useState<String>('ログインに成功しました。');
   useEffect(() => {
     // 認証コードや状態を使用してアクセストークンを取得する処理などを行う
     // ...
@@ -32,6 +33,10 @@ const Callback: React.FC = () => {
       const method = 'POST';
       const body = Object.keys(obj).map((key) => key + "=" + encodeURIComponent(obj[key])).join("&");
       const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/api/token`, { method, headers, body, mode: "cors", credentials: 'include' });
+      if (response.status !== 200) {
+        setMessage("認証に失敗しました。")
+        throw new Error("認証に失敗しました。")
+      }
       const tokenJson: SpotifyAPIToken = await response.json();
       localStorage.setItem("SpotifyAccessToken", tokenJson.access_token)
       localStorage.setItem("SpotifyRefreshToken", tokenJson.refresh_token)
@@ -57,7 +62,7 @@ const Callback: React.FC = () => {
   return (
     <div>
       {/* コールバック後のページのコンテンツを表示 */}
-      <p>認証が完了しました。</p>
+      <p>{message}</p>
     </div>
   );
 }
