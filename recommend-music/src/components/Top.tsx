@@ -6,7 +6,6 @@ const Top: React.FC = () => {
     return (
         <Stack spacing={1}>
             <Grid container spacing={1}>
-                使い方を書く
             </Grid>
         </Stack >
 

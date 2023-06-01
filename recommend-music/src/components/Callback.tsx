@@ -1,9 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { SpotifyAPIToken, UserProfile } from './Types';
 import { useNavigate } from "react-router-dom";
+import { AuthInfoContext, AuthContext } from '../providers/loginProvider';
 
 const Callback: React.FC = () => {
+  const [_, setAuthInfo] = useContext(AuthInfoContext);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const code = queryParams.get('code');
@@ -40,6 +42,7 @@ const Callback: React.FC = () => {
       const tokenJson: SpotifyAPIToken = await response.json();
       localStorage.setItem("SpotifyAccessToken", tokenJson.access_token)
       localStorage.setItem("SpotifyRefreshToken", tokenJson.refresh_token)
+      setAuthInfo({ token: tokenJson.access_token, isLogin: true } as AuthContext);
     };
     const fetchUserInfo = async () => {
       const response = await fetch(`https://api.spotify.com/v1/me`, {

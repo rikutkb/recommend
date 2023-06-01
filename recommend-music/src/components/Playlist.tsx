@@ -6,6 +6,8 @@ import { Playlist, Track, Playlists, Tracks } from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
+import { useContext } from 'react';
+import { AuthInfoContext, AuthContext } from '../providers/loginProvider';
 
 type Props = {
     setPlaylistID: React.Dispatch<React.SetStateAction<string>>
@@ -16,8 +18,8 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
     const [inputValue, setInputValue] = React.useState('');
-    const UserID = localStorage.getItem("SpotifyUserID");
-    const AccessToken = localStorage.getItem("SpotifyAccessToken");
+    const [authInfo, _] = useContext(AuthInfoContext);
+    const AccessToken = authInfo.token;
     const handleClick = (track: Track) => {
     }
     const fetchPlaylists = async () => {
@@ -27,17 +29,15 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
         const data: Playlists = await response.json();
         setPlaylists(data.items);
     }
-    const fetchPlaylist = async (id: string) => {
-        if (id !== "") {
-            const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
-                headers: { 'Authorization': `Bearer ${AccessToken}` }
-            });
-            const data: Playlist = await response.json();
-            setTracks(data.tracks)
-        }
+    const fetchPlaylist = async () => {
+        const response = await fetch(`https://api.spotify.com/v1/playlists/me`, {
+            headers: { 'Authorization': `Bearer ${AccessToken}` }
+        });
+        const data: Playlist = await response.json();
+        setTracks(data.tracks)
     }
     useEffect(() => {
-        if (UserID !== null) {
+        if (AccessToken !== "") {
             fetchPlaylists();
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -48,7 +48,7 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
                 onChange={(event, item) => {
                     if (item !== null) {
                         //setSelectedPlayList(item);
-                        fetchPlaylist(item.id);
+                        fetchPlaylist();
                         setPlaylistID(item.id);
                     }
                 }}

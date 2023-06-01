@@ -36,9 +36,10 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
         >
             <CartesianGrid />
             <Legend verticalAlign="top" height={36} />
-            <XAxis type="number" dataKey="x" name="x" unit="-" />
-            <YAxis type="number" dataKey="y" name="y" unit="-" />
+            <XAxis type="number" dataKey="x" unit="-" />
+            <YAxis type="number" dataKey="y" unit="-" />
             <ZAxis type="category" dataKey="name" name="楽曲名" unit="" />
+
             <Tooltip cursor={{ strokeDasharray: '3 3' }} />
 
             <Scatter name="プレイリスト" data={musicPlots?.plots.filter(plot => plot.is_playlist)} fill={COLORS[0]}>

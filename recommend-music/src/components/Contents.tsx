@@ -5,6 +5,7 @@ import { Grid, Stack } from '@mui/material';
 import ArtistsListView from './Artistslist';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import { LoginFlagProvider } from '../providers/loginProvider';
 
 export default function Contents() {
     const [playlistID, setPlaylistID] = useState<string>("37i9dQZF1DXaJxsaI3czLL");
@@ -13,7 +14,9 @@ export default function Contents() {
         <Stack spacing={1}>
             <Grid container spacing={1}>
                 <Grid item xs={3}>
-                    <PlaylistView setPlaylistID={setPlaylistID}></PlaylistView>
+                    <LoginFlagProvider>
+                        <PlaylistView setPlaylistID={setPlaylistID}></PlaylistView>
+                    </LoginFlagProvider>
                 </Grid>
                 <Grid item xs={3}>
                     <ArtistsListView setArtistID={setArtistID}></ArtistsListView>
