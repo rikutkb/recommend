@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import { useContext } from 'react';
-import { AuthInfoContext, AuthContext } from '../providers/loginProvider';
+import { AuthInfoContext } from '../providers/loginProvider';
 
 type Props = {
     setPlaylistID: React.Dispatch<React.SetStateAction<string>>
@@ -18,6 +18,7 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
     const [inputValue, setInputValue] = React.useState('');
+    // eslint-disable-next-line
     const [authInfo, _] = useContext(AuthInfoContext);
     const AccessToken = authInfo.token;
     const handleClick = (track: Track) => {

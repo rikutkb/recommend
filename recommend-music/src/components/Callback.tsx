@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthInfoContext, AuthContext } from '../providers/loginProvider';
 
 const Callback: React.FC = () => {
+  // eslint-disable-next-line
   const [_, setAuthInfo] = useContext(AuthInfoContext);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -60,6 +61,7 @@ const Callback: React.FC = () => {
           navigate('/recommend');
         }, 1000);
       });
+    // eslint-disable-next-line
   }, [code, navigate]);
 
   return (
