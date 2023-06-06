@@ -30,8 +30,8 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
         const data: Playlists = await response.json();
         setPlaylists(data.items);
     }
-    const fetchPlaylist = async () => {
-        const response = await fetch(`https://api.spotify.com/v1/playlists/me`, {
+    const fetchPlaylist = async (id: string) => {
+        const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
             headers: { 'Authorization': `Bearer ${AccessToken}` }
         });
         const data: Playlist = await response.json();
@@ -49,7 +49,7 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
                 onChange={(event, item) => {
                     if (item !== null) {
                         //setSelectedPlayList(item);
-                        fetchPlaylist();
+                        fetchPlaylist(item.id);
                         setPlaylistID(item.id);
                     }
                 }}
