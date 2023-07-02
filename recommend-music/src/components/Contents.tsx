@@ -12,11 +12,9 @@ export default function Contents() {
     const [musicID, setMusicID] = useState<string>("2dUYxBbmtmNfanhSLbRcry")
     return (
         <Stack spacing={1}>
-
             <Grid container spacing={1}>
                 <Grid item xs={3}>
                     <Grid item xs={3}>
-
                         <FormControl>
                             <InputLabel id="demo-simple-select-label"></InputLabel>
                             <Select
@@ -25,12 +23,12 @@ export default function Contents() {
                                 label="Age"
                                 value={0}
                             >
-                                <MenuItem value={"0"}>検索</MenuItem>
+                                <MenuItem value={"0"}>全てのプレイリスト</MenuItem>
+                                <MenuItem value={"1"}>マイプレイリスト</MenuItem>
                             </Select>
                         </FormControl>
                     </Grid>
                     <Grid item xs={3}>
-
                         <LoginFlagProvider>
                             <PlaylistView setPlaylistID={setPlaylistID}></PlaylistView>
                         </LoginFlagProvider>
@@ -40,18 +38,9 @@ export default function Contents() {
                     <ArtistsListView setArtistID={setArtistID}></ArtistsListView>
                 </Grid>
                 <Grid item xs={6}>
-                    <Stack>
-                        <MusicPlotter playlistID={playlistID} artistID={artistID} setMusicID={setMusicID} ></MusicPlotter>
-                    </Stack>
-                    <Stack>
-
-                        <Player musicID={musicID}></Player>
-
-                    </Stack>
+                    <MusicPlotter playlistID={playlistID} artistID={artistID} setMusicID={setMusicID} ></MusicPlotter>
                 </Grid>
-
             </Grid>
-
         </Stack >
 
     );

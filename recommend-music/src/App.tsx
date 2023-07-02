@@ -7,6 +7,9 @@ import Top from './components/Top';
 import Callback from './components/Callback';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { LoginFlagProvider } from './providers/loginProvider';
+import Footer from './components/Footer';
+import { createTheme } from '@mui/material/styles';
+
 function App() {
   // const [playlist, setPlaylist] = useState<Playlist>();
   return (
@@ -30,9 +33,17 @@ function App() {
           <Grid item xs={1}>
           </Grid>
         </Grid>
+        <Footer thema={darkTheme}></Footer>
       </Stack>
     </div>
   );
 }
-
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#1976d2',
+    },
+  },
+});
 export default App;

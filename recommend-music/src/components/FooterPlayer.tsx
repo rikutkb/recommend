@@ -5,6 +5,8 @@ import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next a
 import { IconContext } from "react-icons";
 import ReactHowler from 'react-howler';
 import { Track } from "./Types";
+import { Grid, Stack, Slider } from '@mui/material';
+import { PlayCircle, Pause, SkipNext, SkipPrevious } from '@mui/icons-material';
 
 type Props = {
     musicID: string
@@ -46,48 +48,60 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
         }
     }
     return (
-        <div className="component">
-            <img
-                className="musicCover"
-                src={preview}
-                width={200}
+        <>
+            <Grid container>
+                <Grid item xs={1}>
+                    <img
+                        className="musicCover"
+                        src={preview}
+                        width={60}
+                    />
+                </Grid>
+                <Grid item xs={2}>
+                    <h3 className="title">{track?.name}</h3>
+                    <p className="artist">{track?.artists[0].name}</p>
+                </Grid>
+                <Grid item xs={6}>
+                    <Stack>
+                        <div>
+                            <ReactHowler
+                                src={previewUrl}
+                                playing={isPlaying}
+                                volume={0.01}
+                            />
+                            <button className="playButton">
+                                <IconContext.Provider value={{ size: "3em", color: "#1976d2" }}>
+                                    <SkipPrevious sx={{ fontSize: "3em" }} />
+                                </IconContext.Provider>
+                            </button>
+                            {!isPlaying ? (
+                                <button className="playButton" onClick={playingButton}>
+                                    <PlayCircle sx={{ fontSize: "3em" }}></PlayCircle>
+                                </button>
+                            ) : (
+                                <button className="playButton" onClick={playingButton}>
+                                    <Pause sx={{ fontSize: "3em" }}></Pause>
 
-            />
-            <div>
-                <h3 className="title">{track?.name}</h3>
-                <p className="artist">{track?.artists[0].name}</p>
-            </div>
-            <div>
-                <ReactHowler
-                    src={previewUrl}
-                    playing={isPlaying}
-                    volume={0.01}
-                />
-                <button className="playButton">
-                    <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-                        <BiSkipPrevious />
-                    </IconContext.Provider>
-                </button>
-                {!isPlaying ? (
-                    <button className="playButton" onClick={playingButton}>
-                        <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-                            <AiFillPlayCircle />
-                        </IconContext.Provider>
-                    </button>
-                ) : (
-                    <button className="playButton" onClick={playingButton}>
-                        <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-                            <AiFillPauseCircle />
-                        </IconContext.Provider>
-                    </button>
-                )}
-                <button className="playButton">
-                    <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-                        <BiSkipNext />
-                    </IconContext.Provider>
-                </button>
-            </div>
-        </div>
+                                </button>
+                            )}
+                            <button className="playButton">
+                                <SkipNext sx={{ fontSize: "3em" }} />
+                            </button>
+                        </div>
+                        <div>
+                            <Slider
+                                size="small"
+                                defaultValue={70}
+                                aria-label="Small"
+                                valueLabelDisplay="auto"
+                            />
+                        </div>
+                    </Stack>
+
+                </Grid>
+            </Grid>
+        </>
+
     )
 }
 export default Player;
