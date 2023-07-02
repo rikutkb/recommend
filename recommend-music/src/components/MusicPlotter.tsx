@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell, Legend } from 'recharts';
-import { MusicPlots } from "./Types";
+import { MusicPlots, MusicPlot, Track } from "./Types";
 type Props = {
     playlistID: string
     artistID: string
+    setMusicID: React.Dispatch<React.SetStateAction<string>>
 }
 
 const COLORS = ['red', 'blue', '#FFBB28', '#FF8042', 'red', 'pink'];
 
-const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
+const MusicPlotter: React.FC<Props> = ({ playlistID, artistID, setMusicID }: Props) => {
     const [musicPlots, setMusicPlots] = useState<MusicPlots>();
+    const [playlistMusic, setPlaylistMusic] = useState<MusicPlot[]>();
+    const [artistMusic, setArtistMusic] = useState<MusicPlot[]>();
+
     useEffect(() => {
         const fetchMusicPlots = async () => {
             if (artistID !== "" && playlistID !== "") {
@@ -17,11 +21,19 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
                 if (response.status === 200) {
                     const data: MusicPlots = await response.json();
                     setMusicPlots(data)
+                    setPlaylistMusic(data.plots.filter(plot => plot.is_playlist))
+                    setArtistMusic(data.plots.filter(plot => !plot.is_playlist))
                 }
             }
         }
         fetchMusicPlots();
     }, [artistID, playlistID])
+    const selectMusic = (event: React.MouseEvent<SVGElement, MouseEvent>) => {
+        const values = (event.currentTarget as SVGElement).getAttribute('values');
+        if (values !== null) {
+            setMusicID(values);
+        }
+    }
 
     return (
         <ScatterChart
@@ -42,17 +54,17 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
 
             <Tooltip cursor={{ strokeDasharray: '3 3' }} />
 
-            <Scatter name="プレイリスト" data={musicPlots?.plots.filter(plot => plot.is_playlist)} fill={COLORS[0]}>
+            <Scatter name="プレイリスト" data={playlistMusic} fill={COLORS[0]}>
                 {
-                    musicPlots && musicPlots.plots.map((entry, index) => (
+                    playlistMusic && playlistMusic.map((entry, index) => (
                         < Cell name={entry.name} key={`cell-${index}`} fill={COLORS[0]} />
                     ))
                 }
             </Scatter>
-            <Scatter name="アーティストの楽曲" data={musicPlots?.plots.filter(plot => !plot.is_playlist)} fill={COLORS[1]}>
+            <Scatter name="アーティストの楽曲" data={artistMusic} fill={COLORS[1]}>
                 {
-                    musicPlots && musicPlots.plots.map((entry, index) => (
-                        < Cell name={entry.name} key={`cell-${index}`} fill={COLORS[1]} />
+                    artistMusic && artistMusic.map((entry, index) => (
+                        < Cell name={entry.name} key={`cell-${index}`} fill={COLORS[1]} values={entry.id} onClick={selectMusic} />
                     ))
                 }
             </Scatter>
@@ -62,4 +74,4 @@ const MusicPlot: React.FC<Props> = ({ playlistID, artistID }: Props) => {
 }
 
 
-export default MusicPlot
+export default MusicPlotter
