@@ -26,10 +26,8 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
         }
         (async () => {
             const trackData = await fetchTrack(musicID);
-            console.log(trackData);
             if (trackData !== undefined) {
                 if (trackData.preview_url) {
-                    console.log(`${trackData.preview_url.split("?")[0]}.mp3`)
                     setPreviewUrl(`${trackData.preview_url.split("?")[0]}.mp3`)
                     setTrack(trackData);
                     setPreview(trackData.album.images[0].url)
@@ -62,6 +60,7 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
                     src={previewUrl}
                     playing={isPlaying}
                     volume={0.01}
+
                 />
                 <button className="playButton">
                     <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>

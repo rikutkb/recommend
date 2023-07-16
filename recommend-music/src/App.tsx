@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Stack spacing={2}>
         <LoginFlagProvider>
-          <Header></Header>
+          <Header thema={darkTheme}></Header>
         </LoginFlagProvider>
         <Grid container spacing={1}>
           <Grid item xs={1}>

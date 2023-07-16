@@ -13,7 +13,7 @@ const Footer: React.FC<Props> = ({ thema }: Props) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <ThemeProvider theme={thema}>
-        <AppBar position="static">
+        <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
           <Toolbar>
             <FooterPlayer musicID={musicID}></FooterPlayer>
           </Toolbar>
