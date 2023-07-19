@@ -9,32 +9,36 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { LoginFlagProvider } from './providers/loginProvider';
 import Footer from './components/Footer';
 import { createTheme } from '@mui/material/styles';
+import { PlayerProvider } from './providers/playerProvider';
 
 function App() {
   // const [playlist, setPlaylist] = useState<Playlist>();
   return (
     <div className="App">
-      <Stack spacing={2}>
-        <LoginFlagProvider>
-          <Header thema={darkTheme}></Header>
-        </LoginFlagProvider>
-        <Grid container spacing={1}>
-          <Grid item xs={1}>
+      <PlayerProvider>
+        <Stack spacing={2}>
+          <LoginFlagProvider>
+            <Header thema={darkTheme}></Header>
+          </LoginFlagProvider>
+          <Grid container spacing={1}>
+            <Grid item xs={1}>
+            </Grid>
+            <Grid item xs={10}>
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Top></Top>} />
+                  <Route path="/recommend" element={<Contents></Contents>}></Route>
+                  <Route path="/callback" element={<LoginFlagProvider><Callback></Callback></LoginFlagProvider>} />
+                </Routes>
+              </BrowserRouter>
+            </Grid>
+            <Grid item xs={1}>
+            </Grid>
           </Grid>
-          <Grid item xs={10}>
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Top></Top>} />
-                <Route path="/recommend" element={<Contents></Contents>}></Route>
-                <Route path="/callback" element={<LoginFlagProvider><Callback></Callback></LoginFlagProvider>} />
-              </Routes>
-            </BrowserRouter>
-          </Grid>
-          <Grid item xs={1}>
-          </Grid>
-        </Grid>
-        <Footer thema={darkTheme}></Footer>
-      </Stack>
+          <Footer thema={darkTheme}></Footer>
+        </Stack>
+      </PlayerProvider>
+
     </div>
   );
 }

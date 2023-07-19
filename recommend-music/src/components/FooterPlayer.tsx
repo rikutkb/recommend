@@ -1,7 +1,5 @@
 
 import React, { useEffect, useState, useRef } from "react";
-import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
-import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons";
 import ReactHowler from 'react-howler';
 import { Track } from "./Types";
@@ -94,6 +92,7 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
                         className="musicCover"
                         src={preview}
                         width={60}
+                        alt="preview"
                     />
                 </Grid>
                 <Grid item xs={2}>

@@ -4,12 +4,10 @@ import MusicPlotter from './MusicPlotter';
 import { Grid, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ArtistsListView from './Artistslist';
 import { LoginFlagProvider } from '../providers/loginProvider';
-import Player from "./Player";
 
 export default function Contents() {
     const [playlistID, setPlaylistID] = useState<string>("37i9dQZF1DXaJxsaI3czLL");
     const [artistID, setArtistID] = useState<string>("1snhtMLeb2DYoMOcVbb8iB")
-    const [musicID, setMusicID] = useState<string>("2dUYxBbmtmNfanhSLbRcry")
     return (
         <Stack spacing={1}>
             <Grid container spacing={1}>
@@ -38,7 +36,7 @@ export default function Contents() {
                     <ArtistsListView setArtistID={setArtistID}></ArtistsListView>
                 </Grid>
                 <Grid item xs={6}>
-                    <MusicPlotter playlistID={playlistID} artistID={artistID} setMusicID={setMusicID} ></MusicPlotter>
+                    <MusicPlotter playlistID={playlistID} artistID={artistID} ></MusicPlotter>
                 </Grid>
             </Grid>
         </Stack >

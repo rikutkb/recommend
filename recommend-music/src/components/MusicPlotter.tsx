@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Cell, Legend } from 'recharts';
-import { MusicPlots, MusicPlot, Track } from "./Types";
+import { MusicPlots, MusicPlot } from "./Types";
+import { PlayingContext, PlayingInfoContext } from "../providers/playerProvider";
 type Props = {
     playlistID: string
     artistID: string
-    setMusicID: React.Dispatch<React.SetStateAction<string>>
 }
 
 const COLORS = ['red', 'blue', '#FFBB28', '#FF8042', 'red', 'pink'];
 
-const MusicPlotter: React.FC<Props> = ({ playlistID, artistID, setMusicID }: Props) => {
-    const [musicPlots, setMusicPlots] = useState<MusicPlots>();
+const MusicPlotter: React.FC<Props> = ({ playlistID, artistID }: Props) => {
     const [playlistMusic, setPlaylistMusic] = useState<MusicPlot[]>();
     const [artistMusic, setArtistMusic] = useState<MusicPlot[]>();
+    // eslint-disable-next-line
+    const [_playingContext, setContext] = useContext(PlayingInfoContext);
 
     useEffect(() => {
         const fetchMusicPlots = async () => {
@@ -20,7 +21,6 @@ const MusicPlotter: React.FC<Props> = ({ playlistID, artistID, setMusicID }: Pro
                 const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/pca?playlistID=${playlistID}&artistID=${artistID}`);
                 if (response.status === 200) {
                     const data: MusicPlots = await response.json();
-                    setMusicPlots(data)
                     setPlaylistMusic(data.plots.filter(plot => plot.is_playlist))
                     setArtistMusic(data.plots.filter(plot => !plot.is_playlist))
                 }
@@ -31,7 +31,7 @@ const MusicPlotter: React.FC<Props> = ({ playlistID, artistID, setMusicID }: Pro
     const selectMusic = (event: React.MouseEvent<SVGElement, MouseEvent>) => {
         const values = (event.currentTarget as SVGElement).getAttribute('values');
         if (values !== null) {
-            setMusicID(values);
+            setContext({ musicID: values } as PlayingContext);
         }
     }
 
