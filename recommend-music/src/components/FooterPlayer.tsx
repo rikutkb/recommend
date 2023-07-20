@@ -35,7 +35,8 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
     const [seek, setSeek] = useState(0.0);
     const updateSeekPos = React.useCallback(() => {
         if (player !== null) {
-            setSeek(player.seek());
+            const time = player.seek();
+            setSeek(formatMusicValue(time));
         }
     }, [player]);
     useAnimationFrame(isPlaying, updateSeekPos);
@@ -105,7 +106,7 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
                             <ReactHowler
                                 src={previewUrl}
                                 playing={isPlaying}
-                                volume={0.01}
+                                volume={0.5}
                                 ref={(ref) => (setPlayer(ref))}
                             />
                             <button className="playButton">
@@ -151,4 +152,6 @@ const Player: React.FC<Props> = ({ musicID }: Props) => {
 
     )
 }
+
+
 export default Player;
