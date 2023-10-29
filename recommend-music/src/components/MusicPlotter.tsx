@@ -21,8 +21,10 @@ const MusicPlotter: React.FC<Props> = ({ playlistID, artistID }: Props) => {
                 const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/pca?playlistID=${playlistID}&artistID=${artistID}`);
                 if (response.status === 200) {
                     const data: MusicPlots = await response.json();
-                    setPlaylistMusic(data.plots.filter(plot => plot.is_playlist))
-                    setArtistMusic(data.plots.filter(plot => !plot.is_playlist))
+                    setPlaylistMusic(data.plots.filter(plot => plot.is_playlist));
+                    setArtistMusic(data.plots.filter(plot => !plot.is_playlist));
+                } else {
+                    console.error("音声データが存在しません。")
                 }
             }
         }
@@ -57,7 +59,7 @@ const MusicPlotter: React.FC<Props> = ({ playlistID, artistID }: Props) => {
             <Scatter name="プレイリスト" data={playlistMusic} fill={COLORS[0]}>
                 {
                     playlistMusic && playlistMusic.map((entry, index) => (
-                        < Cell name={entry.name} key={`cell-${index}`} fill={COLORS[0]} />
+                        < Cell name={entry.name} key={`cell-${index}`} fill={COLORS[0]} values={entry.id} onClick={selectMusic} />
                     ))
                 }
             </Scatter>

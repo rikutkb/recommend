@@ -25,7 +25,7 @@ services:
   proxy:
     build: ./proxy
     ports:
-      - '8000:8000'
+      - '8000:80'
     volumes:
       - ./proxy:/go/src/app
     networks:
