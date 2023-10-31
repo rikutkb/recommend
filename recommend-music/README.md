@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 環境変数について
+
+.envをプロジェクト直下に配置してください。
 
 ## Available Scripts
 

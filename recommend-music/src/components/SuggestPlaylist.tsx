@@ -22,7 +22,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
     }
     useEffect(() => {
         const fetchPlaylist = async () => {
-            const response = await fetch("http://localhost:8080/suggestPlaylist");
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/suggestPlaylist`);
             const data: Playlist = await response.json();
             setPlaylist(data)
         }

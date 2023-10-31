@@ -2,55 +2,57 @@ import React, { useEffect, useState } from "react";
 import PlaylistItem from "./PlaylistItem";
 import List from '@mui/material/List';
 
-import { Playlist, Track ,Playlists,Tracks} from "./Types";
+import { Playlist, Track, Playlists, Tracks } from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
+import { useContext } from 'react';
+import { AuthInfoContext } from '../providers/loginProvider';
 
-const options = ['あいみょん', 'test-2'];
 type Props = {
-    //playlist: Playlist
-    //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
+    setPlaylistID: React.Dispatch<React.SetStateAction<string>>
+
 }
 
-const PlaylistView: React.FC<Props> = ({ }) => {
+const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
-    const [selectedPlayList, setSelectedPlayList] = useState<Playlist>({} as Playlist);
     const [inputValue, setInputValue] = React.useState('');
+    // eslint-disable-next-line
+    const [authInfo, _] = useContext(AuthInfoContext);
+    const AccessToken = authInfo.token;
     const handleClick = (track: Track) => {
-        console.log("----");
     }
     const fetchPlaylists = async () => {
-        const response = await fetch("http://localhost:8080/api/playlists");
+        const response = await fetch(`https://api.spotify.com/v1/me/playlists`, {
+            headers: { 'Authorization': `Bearer ${AccessToken}` }
+        });
         const data: Playlists = await response.json();
-        console.log(data.playlists.items)
-        setPlaylists(data.playlists.items)
-        console.log(playlists)
-        playlists.map((playlist) => console.log(playlist.name))
+        setPlaylists(data.items);
     }
-    const fetchPlaylist = async (id:string) => {
-        if(id !==""){
-            const response = await fetch(`http://localhost:8080/api/playlists/${id}`);
-            const data: Playlist = await response.json();
-            console.log(data.tracks)
-            setTracks(data.tracks)
-        }
+    const fetchPlaylist = async (id: string) => {
+        const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
+            headers: { 'Authorization': `Bearer ${AccessToken}` }
+        });
+        const data: Playlist = await response.json();
+        setTracks(data.tracks)
     }
     useEffect(() => {
-
-        fetchPlaylists();
-
+        if (AccessToken !== "") {
+            fetchPlaylists();
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <Stack spacing={1}>
             <Autocomplete
                 onChange={(event, item) => {
-                    if(item !== null){
-                        setSelectedPlayList(item);
+                    if (item !== null) {
+                        //setSelectedPlayList(item);
                         fetchPlaylist(item.id);
+                        setPlaylistID(item.id);
                     }
-                  }}
+                }}
                 inputValue={inputValue}
                 onInputChange={(event, newInputValue) => {
                     setInputValue(newInputValue);
@@ -75,7 +77,7 @@ const PlaylistView: React.FC<Props> = ({ }) => {
                         <PlaylistItem key={track.track.id}
                             track={track.track}
                             handleClick={handleClick}></PlaylistItem>
-                    )):null
+                    )) : null
                 }
             </List>
         </Stack>

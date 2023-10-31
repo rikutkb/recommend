@@ -1,31 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from "react";
 import PlaylistView from './Playlist';
-import MusicChart from './MusicChart';
-import { Grid, Stack } from '@mui/material';
+import MusicPlotter from './MusicPlotter';
+import { Grid, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ArtistsListView from './Artistslist';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+import { LoginFlagProvider } from '../providers/loginProvider';
+
 export default function Contents() {
+    const [playlistID, setPlaylistID] = useState<string>("37i9dQZF1DXaJxsaI3czLL");
+    const [artistID, setArtistID] = useState<string>("1snhtMLeb2DYoMOcVbb8iB")
     return (
         <Stack spacing={1}>
             <Grid container spacing={1}>
                 <Grid item xs={3}>
-                    <PlaylistView></PlaylistView>
+                    <Grid item xs={3}>
+                        <FormControl>
+                            <InputLabel id="demo-simple-select-label"></InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                label="Age"
+                                value={0}
+                            >
+                                <MenuItem value={"0"}>全てのプレイリスト</MenuItem>
+                                <MenuItem value={"1"}>マイプレイリスト</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <LoginFlagProvider>
+                            <PlaylistView setPlaylistID={setPlaylistID}></PlaylistView>
+                        </LoginFlagProvider>
+                    </Grid>
                 </Grid>
                 <Grid item xs={3}>
-                    <ArtistsListView></ArtistsListView>
+                    <ArtistsListView setArtistID={setArtistID}></ArtistsListView>
                 </Grid>
                 <Grid item xs={6}>
-                    <MusicChart></MusicChart>
+                    <MusicPlotter playlistID={playlistID} artistID={artistID} ></MusicPlotter>
                 </Grid>
             </Grid>
-            <Grid>
-                <Button variant="contained" endIcon={<SendIcon />}>
-                    Send
-                </Button>
-            </Grid>
-        </Stack>
+        </Stack >
 
     );
 }
