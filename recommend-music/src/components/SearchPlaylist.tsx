@@ -6,48 +6,43 @@ import { Playlist, Track, Playlists, Tracks } from "./Types";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
-import { useContext } from 'react';
-import { AuthInfoContext } from '../providers/loginProvider';
 
 type Props = {
     setPlaylistID: React.Dispatch<React.SetStateAction<string>>
-
 }
 
-const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
+const SearchPlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
+    // eslint-disable-next-line
     const [tracks, setTracks] = useState<Tracks>({} as Tracks);
     const [playlists, setPlaylists] = useState<Playlist[]>([]);
-    const [inputValue, setInputValue] = React.useState('');
+    const [searchPlaylistName, setSearchPlaylistName] = useState<string>("");
+
     // eslint-disable-next-line
-    const [authInfo, _] = useContext(AuthInfoContext);
-    const AccessToken = authInfo.token;
     const handleClick = (track: Track) => {
     }
-    const fetchPlaylist = async (id: string) => {
-        const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
-            headers: { 'Authorization': `Bearer ${AccessToken}` }
-        });
-        const data: Playlist = await response.json();
-        setTracks(data.tracks)
-    }
     useEffect(() => {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+        const fetchPlaylists = async () => {
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/search?type=playlists&q=${searchPlaylistName}`);
+            const playlists: Playlists = await response.json();
+            setPlaylists(playlists.items);
+        }
+        fetchPlaylists();
+    }, [searchPlaylistName])
     return (
         <Stack spacing={1}>
+            <TextField id="outlined-basic" label="プレイリスト検索欄" variant="outlined"
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                    setSearchPlaylistName(event.target.value);
+                }}
+            />
             <Autocomplete
                 onChange={(event, item) => {
                     if (item !== null) {
                         //setSelectedPlayList(item);
-                        fetchPlaylist(item.id);
                         setPlaylistID(item.id);
                     }
                 }}
-                inputValue={inputValue}
-                onInputChange={(event, newInputValue) => {
-                    setInputValue(newInputValue);
-                }}
-                id="controllable-states"
+                id="controllable-states-demo"
                 options={playlists}
                 sx={{ width: 200 }}
                 getOptionLabel={(option) => option.name}
@@ -78,4 +73,4 @@ const PlaylistView: React.FC<Props> = ({ setPlaylistID }: Props) => {
 }
 
 
-export default PlaylistView
+export default SearchPlaylistView

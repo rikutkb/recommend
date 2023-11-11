@@ -4,7 +4,6 @@ import { Track } from "./Types";
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import ListItem from '@mui/material/ListItem';
-import ImageIcon from '@mui/icons-material/Image';
 import Avatar from '@mui/material/Avatar';
 
 type Props = {

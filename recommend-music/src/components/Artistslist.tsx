@@ -1,43 +1,39 @@
 import React, { useEffect, useState } from "react";
-import PlaylistItem from "./PlaylistItem";
 import List from '@mui/material/List';
 
-import { Artist, Artists } from "./Types";
+import { Artists } from "./Types";
 import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import ListItem from '@mui/material/ListItem';
 import Avatar from '@mui/material/Avatar';
 
-const options = ['あいみょん', 'artists'];
 type Props = {
-    //playlist: Playlist
-    //fetchPlaylist: React.Dispatch<React.SetStateAction<Playlist>>
+    setArtistID: React.Dispatch<React.SetStateAction<string>>
 }
 
-const ArtistsListView: React.FC<Props> = ({ }) => {
+const ArtistsListView: React.FC<Props> = ({ setArtistID }: Props) => {
     const [artistsList, setArtists] = useState<Artists>();
-    const [value, setValue] = React.useState<string | null>(options[0]);
-    const [inputValue, setInputValue] = React.useState('');
-    const handleClick = (track: Artist) => {
-        console.log("----");
-    }
+    const [searchArtistName, setSearchArtistName] = useState<string>("");
     useEffect(() => {
         const fetchArtists = async () => {
-            const response = await fetch("http://localhost:8080/api/artists");
-            console.log(response)
+            const response = await fetch(`${process.env.REACT_APP_PROXY_PATH}/v1/search?q=${searchArtistName}`);
             const data: Artists = await response.json();
             setArtists(data)
         }
         fetchArtists();
 
-    }, [])
+    }, [searchArtistName])
     return (
         <Stack spacing={1}>
-            <TextField id="outlined-search" label="Artists field" type="search" 
-                sx={{ width: 200 }}/>
+            <TextField
+                id="outlined-search"
+                label="Artists field"
+                type="search"
+                value={searchArtistName}
+                onChange={e => setSearchArtistName(e.target.value)}
+                sx={{ width: 200 }} />
             <List sx={{
                 width: '100%',
                 maxWidth: 200,
@@ -50,7 +46,7 @@ const ArtistsListView: React.FC<Props> = ({ }) => {
                 {
                     artistsList && artistsList.artists.items.map((artist) => (
 
-                        <ListItem key={artist.id}>
+                        <ListItem key={artist.id} onClick={() => { setArtistID(artist.id) }}>
                             <ListItemAvatar>
                                 <Avatar src={artist.images[0]?.url} />
 
@@ -67,5 +63,4 @@ const ArtistsListView: React.FC<Props> = ({ }) => {
     )
 }
 
-
-export default ArtistsListView
+export default ArtistsListView;
